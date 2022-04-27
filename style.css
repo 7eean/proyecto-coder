@@ -1,0 +1,1529 @@
+body {
+    background-color: #fdfaec; 
+    margin: auto;
+}
+
+/* Comienzo Home */
+/*     Main     */
+.main-container {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+    width: fit-content;
+}
+
+/*        Header Home     */
+header {
+    font-family: 'Nothing You Could Do' ,sans-serif;
+    font-size: 30px;
+    grid-area: header;
+    color: #465f38;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #3f4f36;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 5px 10px;
+    display: inline-block;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 5px 5px;
+      
+}
+
+a:link{
+    color: #aec1a4;
+}
+
+a:visited {
+    color: #aec1a4;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+a:active {
+    color: burlywood;
+}
+
+.titulo-main {
+    color: #465f38; 
+    font-family: 'Raleway' , sans-serif;
+}
+
+main {
+    grid-area: main;
+    font-family: 'Anek Tamil' ,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "intro intro"
+    "imgbody imgbody"
+    "objetivos objetivos"
+    "descripcionwd descripcionwd"
+    "ecommerce ecommerce"
+    "dsoftware dsoftware";
+    font-size: large;
+}
+
+main img {
+    width: 30%;
+    border-radius: 1.5em;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+}
+
+.imgbody{
+    grid-area: imgbody;
+    width: 0 auto; 
+    border-radius: none;
+}
+
+.imgbody1 {
+    width: 100%;
+    height: 86%;
+}
+
+.intro {
+    grid-area: intro;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #94af83;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7em;
+    display: inline;
+    text-shadow: #465f38;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Comienzo de seccion objetivos */
+.objetivos {
+    grid-area: objetivos;
+    display: grid;
+    grid-template-areas: 
+    "imgobjetivos titulo-objetivo"
+    "imgobjetivos texto-1"
+    "imgobjetivos texto-2"
+    "imgobjetivos texto-3"
+    "imgobjetivos texto-4";
+    color: #aec1a4;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+
+.titulo-objetivo {
+    grid-area: titulo-objetivo;
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    margin-bottom: 1px;
+}
+
+.imgobjetivos {
+    grid-area: imgobjetivos;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.texto-1{
+    grid-area: texto-1;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.texto-2{
+    grid-area: texto-2;
+    display: none;
+}
+
+.texto-3{
+    grid-area: texto-3;
+    display: none;
+}
+
+.texto-4 {
+    grid-area: texto-4;
+    display: none;
+}
+
+/* Fin de seccion objetivos */
+
+/* Comienzo seccion descripcion de Responsive Web Design */
+.descripcionwd {
+    grid-area: descripcionwd;
+    display: grid;
+    grid-template-areas: 
+    "titulo-wd imgwd"
+    "texto-wd imgwd";
+    color: #aec1a4;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.titulo-wd {
+    grid-area: titulo-wd;
+    text-align: center;
+    color: #465f38;
+    font-size: 2.2em;
+}
+
+.texto-wd {
+    grid-area: texto-wd;
+    font-size: xx-large;
+}
+
+.imgwd {
+    grid-area: imgwd;
+    display: none;
+}
+/* Fin de seccion responsive web design */
+
+/*Comienzo de seccion Desarrollo software */
+.dsoftware {
+    grid-area: dsoftware;
+    display: grid;
+    grid-template-areas: 
+    "desarrollosft desarrollosft"
+    "imgdesarrollosft imgdesarrollosft";
+}
+
+.desarrollosft {
+    grid-area: desarrollosft;
+    text-align: center;
+    color: #465f38;
+    font-size: 1.5em;
+}
+
+.imgdesarrollosft{
+    grid-area: imgdesarrollosft;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* Fin de Desarrollo Software */
+
+/*Comienzo de E-Commerce*/
+.ecommerce {
+    grid-area: ecommerce;
+    grid-template-areas: 
+    "titulo-ecommerce titulo-ecommerce"
+    "subitulo-ecommerce subtitulo-ecommerce"
+    "texto-ecommerce video-ecommerce"
+    "texto-ecommerce video-ecommerce"
+    "texto-ecommerce video-ecommerce";
+    
+}
+
+.titulo-ecommerce {
+    grid-area: titulo-ecommerce;
+    text-align: center;
+    color: #465f38;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+
+.subtitulo-ecommerce {
+    grid-area: subtitulo-ecommerce;
+    text-align: center;
+    color: #3f4f36;
+    font-size: 1.7em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.texto-ecommerce {
+    grid-area: texto-ecommerce;
+    text-align: center;
+    color: #aec1a4;
+    display: none;
+}
+
+.video-ecommerce {
+    grid-area: video-ecommerce;
+   
+}
+/* Fin de E-Commerce */
+
+.objetivos, .descripcionwd, .dsoftware, .ecommerce {
+    border: solid 1px #465f38; 
+    border-radius: 0.5em;
+    margin: 2em 2em;
+    padding: 0.25rem 0.60rem;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+
+} 
+
+/*Inicio de footer*/
+    
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3f4f36;
+    color: #aec1a4;
+    max-width: 1440px;
+    min-width: 120px;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #aec1a4;
+}
+
+footer div ul li {
+    margin: 0.5px 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    color: #aec1a4;
+}
+
+footer a:link {
+    color: #aec1a4;
+}
+
+footer a:visited {
+    color: #aec1a4;
+}
+
+footer a:hover {
+    color: beige;
+}
+
+footer div {
+    margin: 10px 10px;
+    font-family: 'Open Sans' sans-serif;
+    color: #aec1a4;
+}
+
+/*                                      Inicio Estilos SERVICES                                         */
+.services-container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+.creative{
+    margin-top: 50px;
+}
+.titulo-mainservices {
+    margin: 5px;
+}
+
+.subtitulo-services {
+    margin-bottom: 2px;
+}
+
+.main-services {
+    grid-area: main;
+    font-family: 'Anek Tamil' ,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "seo seo seo"
+    "infoe-commerce infoe-commerce infoe-commerce"
+    "web web web"
+    "media-marketing media-marketing media-marketing"
+    "email-marketing email-marketing email-marketing";
+    font-size: large;
+    border: solid 1px #465f38; 
+    border-radius: 0.5em;
+    margin: 2em 2em;
+    padding: 0.25rem 0.60rem;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    background-color: #94af83;
+}
+
+/* Seccion SEO */
+.seo {
+    grid-area: seo;
+ }
+    
+.tituloseo {
+    margin-top: 20px;
+    text-align: left;
+    color: #3f4f36;
+    font-size: 2.6em;
+    margin-bottom: 5px;
+}
+
+.subtituloseo {
+    margin-top: 5px;
+    text-align: left;
+    color: #465f38;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    display: none;
+}
+.texto1seo {
+    font-size: x-large;
+}
+.texto2seo, .texto3seo, .texto4seo, .texto5seo, .texto6seo {
+    display: none;
+}
+
+.imgseo1 {
+    display: none;
+}
+
+/*Fin seccion SEO*/
+
+/*Seccion E-Commerce */
+.infoe-commerce {
+    grid-area: infoe-commerce;
+}
+
+.tituloecom {
+    text-align: left;
+    color: #465f38;
+    font-size: 2.3em;
+}
+.textoecom1, .textoecom4 {
+    font-size: x-large;
+}
+
+.textoecom2, .textoecom3, .imgecom {
+    display: none;
+}
+/*Fin Seccion E-Commerce*/
+
+/*Seccion web*/
+.web {
+    grid-area: web;
+}
+
+.titulo-webdesign {
+    text-align: left;
+    color: #465f38;
+    font-size: 2.3em;
+}
+
+.texto2-web, .texto3-web, .imgweb{
+    display: none;
+}
+
+.texto1-web, .texto4-web {
+    font-size: x-large;
+}
+/*Fin seccion WEB*/
+
+/*Inicio Seccion media-marketing*/
+.media-marketing{
+    grid-area: media-marketing;
+}
+
+.titulomm {
+    text-align: left;
+    color: #465f38;
+    font-size: 2.3em;
+}
+
+.texto1publicidad{
+    font-size: x-large;
+}
+
+.texto2publicidad, .texto3publicidad, .texto4publicidad, .texto5publicidad, .imgpublicidad{
+    display: none;
+}
+/*fin seccion media-marketing*/
+
+
+/*Seccion email-marketing*/
+.email-marketing{
+    grid-area: email-marketing;
+}
+
+.tituloem {
+    text-align: left;
+    color: #465f38;
+    font-size: 2.3em;
+}
+
+.texto1email, .texto5email {
+    font-size: x-large;
+}
+
+.texto2email, .texto3email, .texto4email, .imgemail {
+    display:none;
+}
+/*Fin seccion email-marketing*/
+
+.seo, .infoe-commerce, .web, .media-marketing, .email-marketing {
+    border: solid 1px #465f38; 
+    border-radius: 0.5em;
+    margin: 2em 2em;
+    padding: 0.25rem 0.60rem;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+    background-color: #fdfaec;
+}
+/*                                   Fin de SERVICES                          */
+
+/*                                   Comienzo ABOUT                         */
+.body-about {
+    background-image: url(https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+    background-size: 100%;
+    background-position: end;
+    background-repeat: none;
+}
+.about-container{
+    width: fit-content;
+}
+
+/* Seccion Main ABOUT US*/
+.mainaboutus {
+    grid-area: main;
+    font-family: 'Anek Tamil' ,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "queofrecemos queofrecemos queofrecemos"
+    "sencillo sencillo sencillo"
+    "dosomethinggreat dosomethinggreat dosomethinggreat"
+    "escuchamos escuchamos escuchamos";
+    font-size: large;
+    border: solid 1px #465f38; 
+    border-radius: 0.5em;
+    padding: 0.25rem 0.60rem;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+    margin-top: 200px;
+}
+
+.queofrecemos, .sencillo, /*.dosomethinggreat,*/ .escuchamos {
+    border: solid 1px #465f38; 
+    border-radius: 0.5em;
+    margin: 2em 2em;
+    padding: 0.25rem 0.60rem;
+    box-shadow: 0 0.1rem 0.4rem #465f38;
+    background-color: #fdfaec;
+}
+
+
+
+/* Seccion que ofrecemos */
+.queofrecemos {
+    grid-area: queofrecemos;
+}
+
+.tituloqueofrecemos {
+    text-align: right;
+    color: #465f38;
+    font-size: 2.3em;
+}
+
+.texto1queofrecemos {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.texto2queofrecemos {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    display: none;
+}
+
+.divlista1{
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-color: #465f38;
+    font-size: 1.5em;
+    font-family: 'Newsreader', sans-serif;
+    padding: 1.4rem 1.4rem;
+    letter-spacing: 2px;
+}
+
+/*Fin Seccion que ofrecemos*/
+
+
+/*Inicio seccion sencillo*/
+.sencillo {
+    grid-area: sencillo;
+}
+
+.titulosencillo {
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    text-decoration: overline;
+}
+
+.textosencillo {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6em;
+}
+
+/*Fin seccion sencillo*/
+
+
+/*Comienzo seccion img dsg */
+.dosomethinggreat {
+    grid-area: dosomethinggreat;
+    width: 1500px;
+    min-height: 150px;
+    display: none;
+}
+
+.imgdsg {
+    width: 98%;
+    height: 50%;
+    display: none;
+}
+
+/* Fin seccion DSG IMG */
+
+/*Inicio seccion Escuchamos*/
+.escuchamos {
+    grid-area: escuchamos;
+    margin-top: auto;
+}
+
+.subtituloescuchamos {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.tituloescuchamos {
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    text-decoration: overline;
+}
+
+.textoescuchamos {
+    text-align: left;
+    justify-content: center;
+    font-size: 1.6em;
+}
+
+.divlista2 {
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-color: #465f38;
+    font-size: 1.5em;
+    font-family: 'Newsreader', sans-serif;
+    padding: 1.4rem 1.4rem;
+    letter-spacing: 2px;
+}
+                                /* Fin estilos pagina ABOUT US */
+                                /* Comienzo ESTILOS PAGINA CONTACTO */
+
+.body-contact {
+    background-image: url(https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); 
+    background-size: 100%;
+    background-position: end;
+    background-repeat: none;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer"
+}
+
+.contacto-main {
+    grid-area: main;
+    font-family: 'Anek Tamil' ,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "secciontitulo"
+    "seccionubicacion"
+    "seccionredes"
+    "seccionemail3"
+    "seccionasesoria"
+    "form-register";
+    font-size: large;
+} 
+
+.secciontitulo{ 
+    grid-area: secciontitulo;
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    text-decoration: overline;
+    margin-top: 200px;
+}
+
+.seccionubicacion {
+    grid-area: seccionubicacion;
+}
+
+.imgubi{
+    margin-left: 240px;
+}
+.texto1ubi, .texto2ubi {
+    text-align: center;
+    background-color: #fdfaec;
+}
+.seccionredes {
+    grid-area: seccionredes;
+}
+.imgredes3{
+    margin-left: 240px;
+}
+.textoredes3{
+    text-align: center;
+    background-color: #fdfaec;
+}
+
+.seccionemail3 {
+    grid-area: seccionemail3;
+}
+.imgemail{
+    margin-left: 240px;
+}
+.texto1email, .texto2email{
+    text-align: center;
+    background-color: #fdfaec ;
+}
+.seccionasesoria {
+    grid-area: seccionasesoria;
+} 
+.imgasesoria {
+    margin-left: 240px;
+}
+
+.texto1asesor, .texto2asesor, .texto3asesor{
+    text-align: center;
+    background-color: #fdfaec;
+}
+
+.form-register {
+    grid-area: form-register;
+    align-items: center;
+    text-align: center;
+}
+         /* Fin Pagina y estilos de CONTACTO */
+         
+         /*Inicio ESTILOS de NEWS */
+
+.news-container {
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer"
+}
+
+.news-main {
+    grid-area: main;
+    font-family: 'Anek Tamil' ,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "tophead"
+    "section-tablas";
+    font-size: large;
+    width: auto;
+}
+
+.tophead {
+    grid-area: tophead;
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    text-decoration:none;
+    margin-top: 200px;
+
+}
+
+.section-tablas {
+    grid-area: section-tablas;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+.titulotablas {
+    text-align: center;
+    color: #465f38;
+    font-size: 2.3em;
+    text-decoration:none;
+}
+
+.tablasimg{
+    width: 275px;
+    display: none;
+}
+
+.tbody {
+    font-family: 'Newsreader', sans-serif;
+    text-align: center;
+}
+
+
+/*Comienzo media queries*/
+
+@media screen and (min-width:768px) {
+    .main-container {
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+        width: 100%;
+    }
+    
+    /*        Header Home     */
+    header {
+        font-family: 'Nothing You Could Do' ,sans-serif;
+        font-size: 30px;
+        grid-area: header;
+        color: #465f38;
+        display: flex;
+        justify-content: left;
+        height: 20vh;
+        align-items: left;
+        flex-direction: row;
+    }
+    
+    nav {
+        grid-area: nav;
+        background-color: white;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center; 
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+        display: inline-block;
+        
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        margin: 5px 5px;
+        
+       
+    }
+    
+    a:link{
+        color: #465f38;
+    }
+    
+    a:visited {
+        color: #465f38;
+    }
+    
+    a:hover {
+        color: #aec1a4;
+    }
+    
+    a:active {
+        color: #aec1a4;
+    }
+    
+    .titulo-main {
+        color: #465f38; 
+        font-family: 'Raleway' , sans-serif;
+    }
+    
+    main {
+        grid-area: main;
+        font-family: 'Anek Tamil' ,sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "intro intro"
+        "imgbody imgbody"
+        "objetivos objetivos"
+        "descripcionwd descripcionwd"
+        "dsoftware ecommerce";
+        font-size: large;
+    }
+    
+    main img {
+        width: 30%;
+        border-radius: 1.5em;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+    }
+    
+    .imgbody{
+        grid-area: imgbody;
+        width: 0 auto; 
+        border-radius: none;
+    }
+    
+    .imgbody1 {
+        width: 100%;
+        height: 86%;
+    }
+    
+    .intro {
+        grid-area: intro;
+        margin-top: 150px;
+        margin-bottom: 300px;
+        text-align: center;
+        color: #94af83;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.3em;
+        display: inline;
+        text-shadow: #465f38;
+    }
+    
+    
+    /* Comienzo de seccion objetivos */
+    .objetivos {
+        grid-area: objetivos;
+        display: grid;
+        grid-template-areas: 
+        "imgobjetivos titulo-objetivo"
+        "imgobjetivos texto-1"
+        "imgobjetivos texto-2"
+        "imgobjetivos texto-3"
+        "imgobjetivos texto-4";
+        color: #aec1a4;
+        font-size: 1.1em;
+        text-align: left;
+    }
+    
+    
+    .titulo-objetivo {
+        grid-area: titulo-objetivo;
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+    
+    .imgobjetivos {
+        grid-area: imgobjetivos;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .texto-1{
+        grid-area: texto-1;
+        font-size: 1em;
+        display: block;
+    }
+    
+    .texto-2{
+        grid-area: texto-2;
+        display: block;
+    }
+    
+    .texto-3{
+        grid-area: texto-3;
+        display: block;
+    }
+    
+    .texto-4 {
+        grid-area: texto-4;
+        display: block;
+    }
+    
+    /* Fin de seccion objetivos */
+    
+    /* Comienzo seccion descripcion de Responsive Web Design */
+    .descripcionwd {
+        grid-area: descripcionwd;
+        display: grid;
+        grid-template-areas: 
+        "titulo-wd imgwd"
+        "texto-wd imgwd";
+        color: #aec1a4;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .titulo-wd {
+        grid-area: titulo-wd;
+        text-align: center;
+        color: #465f38;
+        font-size: 2.6em;
+    }
+    
+    .texto-wd {
+        grid-area: texto-wd;
+        font-size: 1em;
+    }
+    
+    .imgwd {
+        grid-area: imgwd;
+        display: block;
+    }
+    /* Fin de seccion responsive web design */
+    
+    /*Comienzo de seccion Desarrollo software */
+    .dsoftware {
+        grid-area: dsoftware;
+        display: grid;
+        grid-template-areas: 
+        "desarrollosft desarrollosft"
+        "imgdesarrollosft imgdesarrollosft";
+    }
+    
+    .desarrollosft {
+        grid-area: desarrollosft;
+        text-align: center;
+        color: #465f38;
+        font-size: 1.5em;
+        display: block;
+    }
+    
+    .imgdesarrollosft{
+        grid-area: imgdesarrollosft;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    /* Fin de Desarrollo Software */
+    
+    /*Comienzo de E-Commerce*/
+    .ecommerce {
+        grid-area: ecommerce;
+        grid-template-areas: 
+        "titulo-ecommerce titulo-ecommerce"
+        "subitulo-ecommerce subtitulo-ecommerce"
+        "texto-ecommerce video-ecommerce"
+        "texto-ecommerce video-ecommerce"
+        "texto-ecommerce video-ecommerce";
+        
+    }
+    
+    .titulo-ecommerce {
+        grid-area: titulo-ecommerce;
+        text-align: center;
+        color: #465f38;
+        font-size: 2em;
+    }
+    
+    
+    .subtitulo-ecommerce {
+        grid-area: subtitulo-ecommerce;
+        text-align: center;
+        color: #3f4f36;
+        font-size: 1.5em;
+    }
+    
+    
+    .texto-ecommerce {
+        grid-area: texto-ecommerce;
+        text-align: center;
+        color: #aec1a4;
+        display: block;
+    }
+    
+    .video-ecommerce {
+        grid-area: video-ecommerce;
+       
+    }
+    /* Fin de E-Commerce */
+    
+    .objetivos, .descripcionwd, .dsoftware, .ecommerce {
+        border: solid 1px #465f38; 
+        border-radius: 0.5em;
+        margin: 2em 2em;
+        padding: 0.25rem 0.60rem;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+    
+    } 
+    
+    /*Inicio de footer*/
+        
+    footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #3f4f36;
+        color: #aec1a4;
+    }
+    
+    footer div ul li a {
+        text-decoration: none;
+        color: #aec1a4;
+    }
+    
+    footer div ul li {
+        margin: 0.5px 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        color: #aec1a4;
+    }
+    
+    footer a:link {
+        color: #aec1a4;
+    }
+    
+    footer a:visited {
+        color: #aec1a4;
+    }
+    
+    footer a:hover {
+        color: beige;
+    }
+    
+    footer div {
+        margin: 10px 10px;
+        font-family: 'Open Sans' sans-serif;
+        color: #aec1a4;
+    }
+
+    /* Seccion Services */
+
+    .services-container {
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
+    
+    .main-services {
+        grid-area: main;
+        font-family: 'Anek Tamil' ,sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "seo seo seo"
+        "infoe-commerce infoe-commerce infoe-commerce"
+        "web web web"
+        "media-marketing media-marketing media-marketing"
+        "email-marketing email-marketing email-marketing";
+        font-size: large;
+        border: solid 1px #465f38; 
+        border-radius: 0.5em;
+        margin: 2em 2em;
+        padding: 0.25rem 0.60rem;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+        margin-top: 300px;
+        margin-bottom: 60px;
+        background-color: #94af83;
+    }
+    
+    /* Seccion SEO */
+    .seo {
+        grid-area: seo;
+     }
+        
+    
+    .tituloseo {
+       
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+    
+    .subtituloseo {
+        
+        text-align: left;
+        color: #465f38;
+        font-size: 1.7em;
+        display: block;
+    }
+
+    .texto2seo, .texto3seo, .texto4seo, .texto5seo, .texto6seo {
+        display: block;
+    }
+    
+    .imgseo1 {
+        display: block;
+    }
+    /*Fin seccion SEO*/
+    
+    /*Seccion E-Commerce */
+    .infoe-commerce {
+        grid-area: infoe-commerce;
+    }
+    
+    .tituloecom {
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+    .textoecom2, .textoecom3, .imgecom {
+        display: block;
+    }
+    /*Fin Seccion E-Commerce*/
+    
+    /*Seccion web*/
+    .web {
+        grid-area: web;
+    }
+    
+    .titulo-webdesign {
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+    
+    .texto2-web, .texto3-web, .imgweb{
+        display: block;
+    }
+
+    .texto1-web, .texto4-web {
+        font-size: large;
+    }
+    /*Fin seccion WEB*/
+    
+    /*Inicio Seccion media-marketing*/
+    .media-marketing{
+        grid-area: media-marketing;
+    }
+    
+    .titulomm {
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+    .texto2publicidad, .texto3publicidad, .texto4publicidad, .texto5publicidad, .imgpublicidad{
+        display: block;
+    }
+    /*fin seccion media-marketing*/
+    
+    
+    /*Seccion email-marketing*/
+    .email-marketing{
+        grid-area: email-marketing;
+    }
+    
+    .tituloem {
+        text-align: left;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+
+    .texto1email, .texto5email {
+        font-size: large;
+    }
+
+    .texto2email, .texto3email, .texto4email, .imgemail {
+        display: block;
+    }
+    /*Fin seccion email-marketing*/
+    
+    .seo, .infoe-commerce, .web, .media-marketing, .email-marketing {
+        border: solid 1px #465f38; 
+        border-radius: 0.5em;
+        margin: 2em 2em;
+        padding: 0.25rem 0.60rem;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+        background-color: #fdfaec;
+    }
+
+    /* Fin seccion Services */
+
+    /*                                   Comienzo ABOUT                         */
+    .body-about {
+    background-image: url(https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+    background-size: 100%;
+    background-position: end;
+    background-repeat: none;
+    }
+
+    /* Seccion Main ABOUT US*/
+    .mainaboutus {
+        grid-area: main;
+        font-family: 'Anek Tamil' ,sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "queofrecemos queofrecemos queofrecemos"
+        "sencillo sencillo sencillo"
+        "dosomethinggreat dosomethinggreat dosomethinggreat"
+        "escuchamos escuchamos escuchamos";
+        font-size: large;
+        border: solid 1px #465f38; 
+        border-radius: 0.5em;
+        padding: 0.25rem 0.60rem;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+        margin-top: 500px;
+    }
+
+    .queofrecemos, .sencillo, /*.dosomethinggreat,*/ .escuchamos {
+        border: solid 1px #465f38; 
+        border-radius: 0.5em;
+        margin: 2em 2em;
+        padding: 0.25rem 0.60rem;
+        box-shadow: 0 0.1rem 0.4rem #465f38;
+        background-color: #fdfaec;
+    }
+
+
+
+    /* Seccion que ofrecemos */
+    .queofrecemos {
+        grid-area: queofrecemos;
+    }
+
+    .tituloqueofrecemos {
+        text-align: right;
+        color: #465f38;
+        font-size: 2.3em;
+    }
+
+    .texto1queofrecemos {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
+    .texto2queofrecemos {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.2em;
+        display: block;
+    }
+
+    .divlista1{
+        text-align: left;
+        align-items: center;
+        text-decoration: none;
+        text-decoration-color: #465f38;
+        font-size: 1.5em;
+        font-family: 'Newsreader', sans-serif;
+        padding: 1.4rem 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    /*Fin Seccion que ofrecemos*/
+
+
+    /*Inicio seccion sencillo*/
+    .sencillo {
+        grid-area: sencillo;
+    }
+
+    .titulosencillo {
+        text-align: center;
+        color: #465f38;
+        font-size: 2.3em;
+        text-decoration: overline;
+    }
+
+    .textosencillo {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    /*Fin seccion sencillo*/
+
+
+    /*Comienzo seccion img dsg */
+    .dosomethinggreat {
+        grid-area: dosomethinggreat;
+        width: 1500px;
+        min-height: 150px;
+        display: block;
+    }
+
+    .imgdsg {
+        width: 98%;
+        height: 50%;
+        display: block;
+    }
+
+    /* Fin seccion DSG IMG */
+
+    /*Inicio seccion Escuchamos*/
+    .escuchamos {
+        grid-area: escuchamos;
+        margin-top: auto;
+    }
+
+    .subtituloescuchamos {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.3em;
+    }
+
+    .tituloescuchamos {
+        text-align: center;
+        color: #465f38;
+        font-size: 2.3em;
+        text-decoration: overline;
+    }
+
+    .textoescuchamos {
+        text-align: left;
+        justify-content: center;
+        font-size: 1.3em;
+    }
+
+    .divlista2 {
+        text-align: left;
+        align-items: center;
+        text-decoration: none;
+        text-decoration-color: #465f38;
+        font-size: 1.5em;
+        font-family: 'Newsreader', sans-serif;
+        padding: 1.4rem 1.4rem;
+        letter-spacing: 2px;
+    }
+                                    /* Fin estilos pagina ABOUT US */
+    
+    .body-contact {
+        background-image: url(https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); 
+        background-size: 100%;
+        background-position: end;
+        background-repeat: none;
+    }
+                                    
+    .contact-container {
+        display: grid;
+        grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer"
+    }
+                                    
+    .contacto-main {
+        grid-area: main;
+        font-family: 'Anek Tamil' ,sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "secciontitulo secciontitulo secciontitulo secciontitulo"
+        "seccionubicacion seccionredes seccionemail3 seccionasesoria"
+        "seccionubicacion seccionredes seccionemail3 seccionasesoria"
+        "seccionubicacion seccionredes seccionemail3 seccionasesoria"
+        "seccionubicacion seccionredes seccionemail3 seccionasesoria"
+        "seccionubicacion seccionredes seccionemail3 seccionasesoria"
+        "form-register form-register form-register form-register";
+        font-size: large;
+    } 
+                                    
+    .secciontitulo{ 
+        grid-area: secciontitulo;
+        text-align: center;
+        color: #465f38;
+        font-size: 2.3em;
+        text-decoration: overline;
+        margin-top: 200px;
+    }
+                                    
+    .seccionubicacion {
+        grid-area: seccionubicacion;
+    }
+                                    
+    .seccionredes {
+        grid-area: seccionredes;
+    }
+                                    
+    .seccionemail3 {
+        grid-area: seccionemail3;
+    }
+                                    
+    .seccionasesoria {
+        grid-area: seccionasesoria;
+    }
+                                    
+    .form-register {
+        grid-area: form-register;
+        align-items: center;
+        text-align: center;
+    }
+    /* Fin Pagina y estilos de CONTACTO */ 
+
+             /*Inicio ESTILOS de NEWS */
+
+    .news-container {
+        display: grid;
+        grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer"
+    }
+
+    .news-main {
+        grid-area: main;
+        font-family: 'Anek Tamil' ,sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "tophead tophead tophead"
+        "section-tablas section-tablas section-tablas";
+        font-size: large;
+    }
+
+    .tophead {
+        grid-area: tophead;
+        text-align: center;
+        color: #465f38;
+        font-size: 2.3em;
+        text-decoration:none;
+        margin-top: 200px;
+    }
+
+    .section-tablas {
+        grid-area: section-tablas;
+        margin-bottom: 50px;
+    }
+
+    .titulotablas {
+        text-align: center;
+        color: #465f38;
+        font-size: 2.3em;
+        text-decoration:none;
+    }
+
+    .tablasimg{
+        width: 275px;
+        display: block;
+    }
+
+    .tbody {
+        font-family: 'Newsreader', sans-serif;
+        text-align: center;
+    }
+
+
+}
