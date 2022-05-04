@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    text-decoration: none;
+    background-color: #bbc2c9;
+
+    .emotesfooter {
+        color: $colorprimary;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    p {
+        padding: 3em;
+        font-size: 1.3em;
+    }
+}
