@@ -1,3 +1,35 @@
+@media screen and (min-width: 760px) {
+  /* Header MQ */
+  header {
+    display: grid;
+    grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
+    header .headerimg {
+      grid-area: img;
+      display: block;
+      width: 100%;
+      height: 80%; }
+    header .titulo-main {
+      grid-area: h1;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0.1em; }
+    header .subtitulo1 {
+      grid-area: h3;
+      font-family: 'Prompt', sans-serif;
+      text-align: left;
+      align-items: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      display: block;
+      font-size: 1.5em; } }
+
+@media screen and (min-width: 760px) and (min-width: 1080px) {
+  #boton11 {
+    grid-area: boton1;
+    display: grid; }
+  .subtitulo1 {
+    margin-top: 1px; } }
+
 main {
   font-family: 'Prompt', sans-serif; }
   main .intro {
@@ -48,6 +80,12 @@ header {
     text-align: center;
     margin-bottom: 0.5em;
     margin-top: 0.7em; }
+  header img {
+    display: none; }
+  header h3 {
+    display: none; }
+  header .boton1 {
+    display: none; }
 
 footer {
   text-align: center;
@@ -64,7 +102,7 @@ footer {
   footer .fa-brands {
     color: #fff;
     animation: first_color .5s ease-in-out infinite alternate;
-    font-size: 5em; }
+    font-size: 6em; }
   footer .fa-brands:nth-child(2) {
     animation-name: second_color; }
   footer .fa-brands:nth-child(3) {

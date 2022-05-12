@@ -1,0 +1,54 @@
+@media screen and (min-width: 760px){
+
+    /* Header MQ */
+
+    header{
+        display: grid;
+        grid-template-areas: 
+        "h1 img img img"
+        "h3 img img img"
+        "boton1 img img img";
+
+
+        .headerimg {
+            grid-area: img;
+            display: block;
+            width: 100%;
+            height: 80%;
+            
+        }
+
+        .titulo-main {
+            grid-area: h1;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0.1em;
+        }
+
+        .subtitulo1 {
+            grid-area: h3;
+            font-family: 'Prompt', sans-serif;
+            text-align: left;
+            align-items: center;
+            margin-left: 50px;
+            margin-top: 50px;
+            display: block;
+            font-size: 1.5em;  
+        }
+  
+    }
+
+
+    @media screen and (min-width: 1080px) {
+        #boton11 {
+            grid-area: boton1;
+            display:grid;
+        }
+
+        .subtitulo1 {
+            margin-top: 1px;
+        }
+    }
+
+  
+}

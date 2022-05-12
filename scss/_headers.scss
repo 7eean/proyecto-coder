@@ -1,5 +1,6 @@
 header {
     font-family: 'DM Sans', sans-serif;
+    
 
     h1 {
         color: $colorprimary;
@@ -8,4 +9,21 @@ header {
         margin-bottom: 0.5em;
         margin-top: 0.7em;
     }
+
+    img {
+       display: none;
+    }
+    
+    h3{
+        display: none;
+    }
+    
+    .boton1 {
+        display: none;
+    }
+   
 }
+
+    
+
+
