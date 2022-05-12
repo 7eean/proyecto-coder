@@ -4,10 +4,12 @@ header {
 
     h1 {
         color: $colorprimary;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         margin-bottom: 0.5em;
         margin-top: 0.7em;
+        font-family: 'Press Start 2P', sans-serif;
+        color: black;
     }
 
     img {
@@ -16,6 +18,7 @@ header {
     
     h3{
         display: none;
+        color: $colorprimary;
     }
     
     .boton1 {

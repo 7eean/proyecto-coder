@@ -1,40 +1,5 @@
-@media screen and (min-width: 760px) {
-  /* Header MQ */
-  header {
-    display: grid;
-    grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
-    header .headerimg {
-      grid-area: img;
-      display: block;
-      width: 100%;
-      height: 80%; }
-    header .titulo-main {
-      grid-area: h1;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 0.1em; }
-    header .subtitulo1 {
-      grid-area: h3;
-      font-family: 'Prompt', sans-serif;
-      text-align: left;
-      align-items: center;
-      margin-left: 50px;
-      margin-top: 50px;
-      display: block;
-      font-size: 1.5em; } }
-
-@media screen and (min-width: 760px) and (min-width: 1080px) {
-  #boton11 {
-    grid-area: boton1;
-    display: grid; }
-  .subtitulo1 {
-    margin-top: 1px; } }
-
 main {
   font-family: 'Prompt', sans-serif; }
-  main .intro {
-    text-align: center;
-    margin-bottom: 6em; }
   main .objetivos {
     text-align: justify;
     margin: 3em; }
@@ -65,6 +30,8 @@ main {
       border-top-width: 10px;
       border-left-style: outset;
       border-left-width: 10px; }
+    main .descripcionwd #fotosdiv {
+      display: none; }
   main .contactanosmain {
     background-color: #3f45eb;
     padding: 3em;
@@ -76,14 +43,17 @@ header {
   font-family: 'DM Sans', sans-serif; }
   header h1 {
     color: #3f45eb;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 0.5em;
-    margin-top: 0.7em; }
+    margin-top: 0.7em;
+    font-family: 'Press Start 2P', sans-serif;
+    color: black; }
   header img {
     display: none; }
   header h3 {
-    display: none; }
+    display: none;
+    color: #3f45eb; }
   header .boton1 {
     display: none; }
 
@@ -125,3 +95,56 @@ footer {
     text-shadow: 0 0 10px #000000, 0 0 20px #292929, 0 0 30px #262323; }
   100% {
     text-shadow: 0 0 5px #000000, 0 0 10px #292929, 0 0 15px #262323; } }
+
+@media screen and (min-width: 760px) {
+  /* Header MQ */
+  header {
+    display: grid;
+    grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
+    header .headerimg {
+      grid-area: img;
+      display: block;
+      width: 100%;
+      height: 80%; }
+    header .titulo-main {
+      grid-area: h1;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0.1em;
+      font-size: 3em; }
+    header .subtitulo1 {
+      grid-area: h3;
+      font-family: 'Prompt', sans-serif;
+      text-align: left;
+      align-items: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      display: block;
+      font-size: 1.5em; }
+  main .objetivos {
+    margin-top: 0cm;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 3em; }
+  main .descripcionwd {
+    display: grid;
+    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv"; }
+    main .descripcionwd .textosdiv {
+      grid-area: textosdiv; }
+    main .descripcionwd .textos-wd {
+      display: none; }
+    main .descripcionwd #fotosdiv {
+      display: block;
+      grid-area: fotosdiv; }
+      main .descripcionwd #fotosdiv img {
+        height: 400px;
+        margin-left: 100px; } }
+
+@media screen and (min-width: 1080px) {
+  #boton11 {
+    grid-area: boton1;
+    display: grid; }
+  .subtitulo1 {
+    margin-top: 1px; }
+  main .descripcionwd .textos-wd {
+    display: block; } }
