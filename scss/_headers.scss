@@ -10,6 +10,11 @@ header {
         margin-top: 0.7em;
         font-family: 'Press Start 2P', sans-serif;
         color: black;
+        background: url(../img/fondoprueba3.jpg);
+        background-size: auto 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 8s linear infinite;
     }
 
     img {
@@ -24,10 +29,6 @@ header {
     .boton1 {
         display: none;
     }
-
-    .imgserv1{
-        display: none;
-    }
     
 }
 
@@ -38,7 +39,20 @@ header {
         color: black;
         font-size: 2em;
         font-family: 'Press Start 2P', sans-serif;
+        margin-bottom: 0.5em;
+        margin-top: 0.7em;
+        text-align: center;
     }
+
+    .imgserv1{
+        display: none;
+    }
+
+    .textheader-serv{
+        padding: 3em;
+    }
+
+
 }
 
     

@@ -24,6 +24,7 @@
             margin-top: 50px;
             margin-bottom: 0.1em;
             font-size: 3em;
+
         }
 
         .subtitulo1 {
@@ -39,6 +40,38 @@
 
         .imgserv1{
             display: block;
+            grid-area: img2;
+            width: 100%;
+            height: 110%;
+            margin-top: 50px;
+            padding-bottom: 200px;
+        }
+
+        #h1-services {
+            grid-area: h1;
+            color: black;
+            font-size: 2em;
+            font-family: 'Press Start 2P', sans-serif;
+            margin-bottom: 0em;
+            margin-top: 3em;
+            text-align: center;
+            background: url(../img/fondoprueba.jpg);
+            background-size: auto 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+        }
+
+        .textheader-serv{
+            grid-area: p;
+            margin-bottom: 400px;
+        }
+
+        .headerserv {
+            display: grid;
+            grid-template-areas: 
+            "img2 img2 h1"
+            "img2 img2 p";
         }
   
     }
@@ -76,10 +109,73 @@
                    margin-left: 100px;
                }
            }
+        }
 
-       }
+    .seo{
+        background-color: #f9faf0;
+        
+        .mediaicons{
+            color: $colorprimary;
+            padding: 1.4em;
+            margin-left: 20px;
+            color:brown;   
+        }
 
+        .titulomedias{
+            font-family: 'Lato', sans-serif;
+            margin: 30px 30px;
+            padding-top: 30px;    
+        }
     }
+
+    .enfoquesection{
+        h2{
+            font-family: 'Newsreader',sans-serif;
+            padding: 3em 3em 1.5em 3em;
+            text-align: center;
+            font-size: 5em;
+            background: url(../img/fondoprueba.jpg);
+            background-size: auto 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+        }
+
+        .textoenf1{
+            padding: 1em 3em 0 3em;
+            text-align: center;
+        }
+
+        .textoenf2{
+            padding: 1em 3em 3em 3em;
+            text-align: center;
+        }
+    }
+
+    .capacidades{
+        .titulo-capacidades{
+            font-family: 'Newsreader', sans-serif;
+            padding: 3em 3em 1.5em 3em;
+            text-align: center;
+            font-size: 5em;
+            background: url(../img/fondoprueba2.jpg);
+            background-size: auto 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+        }
+
+        @keyframes shine {
+            from {
+                background-position: center 0;
+            }
+            to {
+                background-position: center 200%;
+            }
+        }
+    }
+
+    
 }    
 
 
@@ -104,3 +200,4 @@
     }
 
   
+}

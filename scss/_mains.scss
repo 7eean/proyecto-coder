@@ -50,6 +50,54 @@ main {
 
     }
 
+    
+    .seo{
+        background-color: #f9faf0;
+
+        .imgicons{
+            display: none;
+        }
+
+        .mediaicons{
+            color: brown;
+            padding: 1.4em;
+            margin-left: 70px;
+        }
+
+        .titulomedias{
+            font-family: 'Lato', sans-serif;
+            margin: 30px 30px;
+            padding-top: 30px;
+        }
+    }
+
+    .enfoquesection{
+        h2{
+            font-family: 'Newsreader',sans-serif;
+            padding: 3em;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .textoenf1{
+            padding: 1em 3em 0 3em;
+        }
+
+        .textoenf2{
+            padding: 1em 3em 3em 3em;
+        }
+    }
+
+    .capacidades{
+        .titulo-capacidades{
+            font-family: 'Newsreader', sans-serif;
+            padding: 3em;
+            text-align: center;
+            font-size: 1.8em;
+        }
+    }
+  
+
     .contactanosmain {
         background-color: $colorprimary;
         padding: 3em;
