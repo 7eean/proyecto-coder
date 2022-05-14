@@ -17,6 +17,15 @@ header {
         animation: shine 8s linear infinite;
     }
 
+    @keyframes shine {
+        from {
+            background-position: center 0;
+        }
+        to {
+            background-position: center 200%;
+        }
+    }
+
     img {
        display: none;
     }

@@ -7833,14 +7833,7 @@ main {
       border-radius: 5px;
       padding: 10px;
       border-color: aliceblue;
-      border-right-style: outset;
-      border-right-width: 20px;
-      border-bottom-style: outset;
-      border-bottom-width: 20px;
-      border-top-style: outset;
-      border-top-width: 10px;
-      border-left-style: outset;
-      border-left-width: 10px; }
+      border-radius: 20px; }
     main .descripcionwd #fotosdiv {
       display: none; }
   main .seo {
@@ -7855,6 +7848,45 @@ main {
       font-family: 'Lato', sans-serif;
       margin: 30px 30px;
       padding-top: 30px; }
+  main .sectionbutton1 {
+    text-align: center;
+    padding: 4em 4em 8em 4em; }
+  main .button4 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 3px;
+    border-radius: 6px;
+    border-width: 3em;
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    height: 300%; }
+  main .button4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg, #4fcf70, #fad684, #a767e5, #12bcfe, #44ce7b);
+    background-size: 50% 100%;
+    border-radius: inherit;
+    border-width: 3em; }
+  main .button4:hover::before {
+    animation: animate_border .75s linear infinite; }
+  main .button4 span {
+    display: block;
+    background-color: #000;
+    padding: 13px 20px;
+    border-radius: 3px;
+    border-width: 3em;
+    position: relative;
+    z-index: 2; }
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%); } }
   main .enfoquesection h2, main .enfoquesection .h2 {
     font-family: 'Newsreader',sans-serif;
     padding: 3em;
@@ -7890,6 +7922,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 8s linear infinite; }
+
+@keyframes shine {
+  from {
+    background-position: center 0; }
+  to {
+    background-position: center 200%; } }
   header img {
     display: none; }
   header h3, header .h3 {
@@ -7991,35 +8029,53 @@ footer {
       font-family: 'Press Start 2P', sans-serif;
       margin-bottom: 0em;
       margin-top: 3em;
-      text-align: center;
-      background: url(../img/fondoprueba.jpg);
-      background-size: auto 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shine 8s linear infinite; }
+      text-align: center; }
     header .textheader-serv {
       grid-area: p;
       margin-bottom: 400px; }
     header .headerserv {
       display: grid;
       grid-template-areas: "img2 img2 h1" "img2 img2 p"; }
-  main .objetivos {
-    margin-top: 0cm;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 3em; }
+  main .objetivos .titulo-objetivo {
+    padding: 0em 3em 2em 3em;
+    font-size: 3em;
+    font-family: 'Prompt', sans-serif;
+    color: #ed779c; }
+  main .objetivos .textosobj:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: brown; }
+  main .objetivos .textosobj {
+    padding: 0.3em 3em 0.3em 3em;
+    text-align: center;
+    background-image: linear-gradient(#ced8f5, #ced8f5);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms; }
   main .descripcionwd {
     display: grid;
-    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv"; }
+    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv";
+    padding: 3em; }
     main .descripcionwd .textosdiv {
       grid-area: textosdiv; }
+    main .descripcionwd .titulo-wd {
+      padding: 3em 3em 2em 3em;
+      font-size: 2em; }
     main .descripcionwd .textos-wd {
+      margin: 3em;
+      padding: 3em 3em 3em 3em;
+      background: #80abcd;
+      background-image: linear-gradient(90deg, #ffff, #efeaf4, #dbdaeb, #bfc9e2, #9cb9d9, #72a8cf, #4494c3, #1b7db6, #0668a1, #045281, #045281);
+      color: black; }
+    main .descripcionwd .texto-3wd {
       display: none; }
     main .descripcionwd #fotosdiv {
-      display: block;
-      grid-area: fotosdiv; }
+      display: none;
+      grid-area: fotosdiv;
+      padding: 3em 3em 3em 3em; }
       main .descripcionwd #fotosdiv img {
-        height: 400px;
+        height: 500px;
         margin-left: 100px; }
   main .seo {
     background-color: #f9faf0; }
@@ -8036,12 +8092,7 @@ footer {
     font-family: 'Newsreader',sans-serif;
     padding: 3em 3em 1.5em 3em;
     text-align: center;
-    font-size: 5em;
-    background: url(../img/fondoprueba.jpg);
-    background-size: auto 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite; }
+    font-size: 5em; }
   main .enfoquesection .textoenf1 {
     padding: 1em 3em 0 3em;
     text-align: center; }
@@ -8052,12 +8103,7 @@ footer {
     font-family: 'Newsreader', sans-serif;
     padding: 3em 3em 1.5em 3em;
     text-align: center;
-    font-size: 5em;
-    background: url(../img/fondoprueba2.jpg);
-    background-size: auto 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite; }
+    font-size: 5em; }
   @keyframes shine {
     from {
       background-position: center 0; }
@@ -8071,4 +8117,22 @@ footer {
   .subtitulo1 {
     margin-top: 1px; }
   main .descripcionwd .textos-wd {
-    display: block; } }
+    display: block; }
+  main .descripcionwd #fotosdiv {
+    display: none;
+    grid-area: fotosdiv;
+    padding: 3em 3em 3em 3em; }
+    main .descripcionwd #fotosdiv img {
+      height: 500px;
+      margin-left: 100px; } }
+
+@media screen and (min-width: 1380px) {
+  main .descripcionwd .textos-wd {
+    display: block; }
+  main .descripcionwd #fotosdiv {
+    display: block;
+    grid-area: fotosdiv;
+    padding: 3em 3em 3em 3em; }
+    main .descripcionwd #fotosdiv img {
+      height: 500px;
+      margin-left: 100px; } }

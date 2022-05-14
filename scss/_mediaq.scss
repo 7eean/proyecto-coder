@@ -55,11 +55,6 @@
             margin-bottom: 0em;
             margin-top: 3em;
             text-align: center;
-            background: url(../img/fondoprueba.jpg);
-            background-size: auto 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 8s linear infinite;
         }
 
         .textheader-serv{
@@ -78,10 +73,30 @@
 
     main{
         .objetivos{
-            margin-top: 0cm;
-            margin-left: 5em;
-            margin-right: 5em;
-            margin-bottom: 3em;
+          .titulo-objetivo{
+              padding: 0em 3em 2em 3em;
+              font-size: 3em;
+              font-family: 'Prompt', sans-serif;
+              color: #ed779c;
+              
+            }
+
+            .textosobj:hover {
+                background-size: 100% 100%;
+                background-position-x: left;
+                color: brown;
+            }
+
+            .textosobj{
+                padding: 0.3em 3em 0.3em 3em;
+                text-align: center;
+                background-image: linear-gradient(#ced8f5, #ced8f5);
+                background-repeat: no-repeat;
+                background-size: 0% 100%;
+                background-position-x: right;
+                transition: background-size 500ms;
+            }
+
         }
 
        .descripcionwd{
@@ -90,22 +105,38 @@
             "textosdiv fotosdiv"
             "textosdiv fotosdiv"
             "textosdiv fotosdiv";
+            padding: 3em;
+           
 
             .textosdiv{
-                grid-area: textosdiv;
+                grid-area: textosdiv;   
+            }
+
+            
+            .titulo-wd{
+                padding: 3em 3em 2em 3em;
+                font-size: 2em;
             }
 
             .textos-wd{
+                margin: 3em;
+                padding: 3em 3em 3em 3em;
+                background: #80abcd;
+                background-image: linear-gradient(90deg, #ffff, #efeaf4, #dbdaeb, #bfc9e2, #9cb9d9, #72a8cf, #4494c3, #1b7db6, #0668a1, #045281, #045281);
+                color: black;  
+            }
+
+            .texto-3wd {
                 display: none;
-                
             }
             
             #fotosdiv{
-               display: block;
+               display: none;
                grid-area: fotosdiv;
+               padding: 3em 3em 3em 3em;
 
                img{
-                   height: 400px;
+                   height: 500px;
                    margin-left: 100px;
                }
            }
@@ -134,12 +165,8 @@
             padding: 3em 3em 1.5em 3em;
             text-align: center;
             font-size: 5em;
-            background: url(../img/fondoprueba.jpg);
-            background-size: auto 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 8s linear infinite;
-        }
+            
+        }   
 
         .textoenf1{
             padding: 1em 3em 0 3em;
@@ -158,11 +185,6 @@
             padding: 3em 3em 1.5em 3em;
             text-align: center;
             font-size: 5em;
-            background: url(../img/fondoprueba2.jpg);
-            background-size: auto 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 8s linear infinite;
         }
 
         @keyframes shine {
@@ -179,7 +201,7 @@
 }    
 
 
-    @media screen and (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
         #boton11 {
             grid-area: boton1;
             display:grid;
@@ -195,9 +217,43 @@
                 .textos-wd{
                     display: block;
                 }
+
+                #fotosdiv{
+                    display: none;
+                    grid-area: fotosdiv;
+                    padding: 3em 3em 3em 3em;
+     
+                    img{
+                        height: 500px;
+                        margin-left: 100px;
+                    }
+                }
             }
+
         }    
     }
-
-  
 }
+
+@media screen and (min-width: 1380px) {
+    main{
+
+        .descripcionwd{
+            .textos-wd{
+                display: block;
+            }
+
+            #fotosdiv{
+                display: block;
+                grid-area: fotosdiv;
+                padding: 3em 3em 3em 3em;
+ 
+                img{
+                    height: 500px;
+                    margin-left: 100px;
+                }
+            }
+        }
+
+    }    
+}
+    

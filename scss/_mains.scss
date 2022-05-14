@@ -33,15 +33,7 @@ main {
             border-radius: 5px;
             padding: 10px;
             border-color: aliceblue;
-
-            border-right-style: outset;
-            border-right-width: 20px;
-            border-bottom-style: outset;
-            border-bottom-width: 20px;
-            border-top-style: outset;
-            border-top-width: 10px;
-            border-left-style: outset;
-            border-left-width: 10px;   
+            border-radius: 20px;   
         }
 
         #fotosdiv {
@@ -68,6 +60,61 @@ main {
             font-family: 'Lato', sans-serif;
             margin: 30px 30px;
             padding-top: 30px;
+        }
+    }
+
+    .sectionbutton1{
+        text-align: center;
+        padding: 4em 4em 8em 4em;
+        
+    }
+
+
+    .button4{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 3px;
+        border-radius: 6px;
+        border-width: 3em;
+        position: relative;
+        overflow: hidden;
+        width: 60%;
+        height: 300%;
+    }
+
+    .button4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(115deg, #4fcf70, #fad684, #a767e5, #12bcfe, #44ce7b);
+        background-size: 50% 100%;
+        border-radius: inherit;
+        border-width: 3em;
+    }
+
+    .button4:hover::before {
+        animation: animate_border .75s linear infinite;
+    }
+
+    
+
+    .button4 span {
+        display: block;
+        background-color: #000;
+        padding: 13px 20px;
+        border-radius: 3px;
+        border-width: 3em;
+        position: relative;
+        z-index: 2;
+    }
+
+    @keyframes animate_border {
+        to {
+            transform: translateX(-50%);
         }
     }
 
