@@ -7811,33 +7811,31 @@ textarea.form-control-lg {
 
 main {
   font-family: 'Prompt', sans-serif; }
-  main .objetivos {
+  main .objetivos, main .descripcionwd {
     text-align: justify;
     margin: 3em; }
-    main .objetivos .titulo-objetivo {
+    main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
       color: #3f45eb;
       text-align: center;
       font-size: 1.9em; }
-    main .objetivos .texto-3, main .objetivos .imgobjetivos {
+    main .objetivos .texto-3, main .descripcionwd .texto-3, main .objetivos .imgobjetivos, main .descripcionwd .imgobjetivos {
       display: none; }
-  main .descripcionwd {
-    text-align: justify;
-    margin: 3em; }
-    main .descripcionwd .titulo-wd {
-      color: #3f45eb;
-      text-align: center;
-      font-size: 1.9em; }
-    main .descripcionwd .textos-wd {
-      background-color: #3f45eb;
-      color: aliceblue;
-      border-radius: 5px;
-      padding: 10px;
-      border-color: aliceblue;
-      border-radius: 20px; }
-    main .descripcionwd #fotosdiv {
-      display: none; }
+  main .descripcionwd .titulo-wd {
+    color: #3f45eb;
+    text-align: center;
+    font-size: 1.9em; }
+  main .descripcionwd .textos-wd {
+    background-color: #3f45eb;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: aliceblue;
+    border-radius: 20px; }
+  main .descripcionwd #fotosdiv {
+    display: none; }
   main .seo {
-    background-color: #f9faf0; }
+    background-color: #f9faf0;
+    color: #fff; }
     main .seo .imgicons {
       display: none; }
     main .seo .mediaicons {
@@ -7965,8 +7963,7 @@ footer {
     font-size: 1.3em; }
   footer .fa-brands {
     color: #fff;
-    animation: first_color .5s ease-in-out infinite alternate;
-    font-size: 6em; }
+    animation: first_color .5s ease-in-out infinite alternate; }
   footer .fa-brands:nth-child(2) {
     animation-name: second_color; }
   footer .fa-brands:nth-child(3) {
@@ -7994,7 +7991,9 @@ footer {
   /* Header MQ */
   header {
     display: grid;
-    grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
+    grid-template-areas: "h1 img img img"
+ "h3 img img img"
+ "boton1 img img img"; }
     header .headerimg {
       grid-area: img;
       display: block;
@@ -8035,17 +8034,18 @@ footer {
       margin-bottom: 400px; }
     header .headerserv {
       display: grid;
-      grid-template-areas: "img2 img2 h1" "img2 img2 p"; }
-  main .objetivos .titulo-objetivo {
+      grid-template-areas: "img2 img2 h1"
+ "img2 img2 p"; }
+  main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
     padding: 0em 3em 2em 3em;
     font-size: 3em;
     font-family: 'Prompt', sans-serif;
     color: #ed779c; }
-  main .objetivos .textosobj:hover {
+  main .objetivos .textosobj:hover, main .descripcionwd .textosobj:hover {
     background-size: 100% 100%;
     background-position-x: left;
     color: brown; }
-  main .objetivos .textosobj {
+  main .objetivos .textosobj, main .descripcionwd .textosobj {
     padding: 0.3em 3em 0.3em 3em;
     text-align: center;
     background-image: linear-gradient(#ced8f5, #ced8f5);
@@ -8055,7 +8055,9 @@ footer {
     transition: background-size 500ms; }
   main .descripcionwd {
     display: grid;
-    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv";
+    grid-template-areas: "textosdiv fotosdiv"
+ "textosdiv fotosdiv"
+ "textosdiv fotosdiv";
     padding: 3em; }
     main .descripcionwd .textosdiv {
       grid-area: textosdiv; }
@@ -8136,3 +8138,15 @@ footer {
     main .descripcionwd #fotosdiv img {
       height: 500px;
       margin-left: 100px; } }
+
+.red-twitter {
+  color: #fff;
+  font-size: 6em; }
+
+.red-instagram {
+  color: #fff;
+  font-size: 6em; }
+
+.red-github {
+  color: #fff;
+  font-size: 6em; }

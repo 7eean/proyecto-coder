@@ -18,8 +18,7 @@ main {
     }
 
     .descripcionwd {
-        text-align: justify;
-        margin: 3em;
+        @extend .objetivos;
 
         .titulo-wd {
             color: $colorprimary;
@@ -42,10 +41,14 @@ main {
 
     }
 
+    @mixin background-alt {
+        background-color: #f9faf0;
+        color: #fff;
+    }
     
     .seo{
-        background-color: #f9faf0;
-
+        @include background-alt;
+        
         .imgicons{
             display: none;
         }

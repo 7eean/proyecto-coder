@@ -7,5 +7,19 @@
 @import "footers";
 @import "mediaq";
 
+// Mapas
+
+$redes: (
+    twitter: #fff,
+    instagram: #fff,
+    github: #fff,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+        font-size: 6em;
+    }
+}
 
 
