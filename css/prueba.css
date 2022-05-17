@@ -532,6 +532,9 @@ progress {
     max-width: 1320px; } }
 
 .row {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin: 2em;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -3411,14 +3414,82 @@ textarea.form-control-lg {
   padding: 1rem 1rem; }
 
 .card-title {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  color: blue;
+  text-align: center; }
+
+.card2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-color: white;
+  border-radius: 20px;
+  padding: 3em; }
+
+.card2:hover {
+  transform: translate(-15px, -30px); }
+
+.card-title2 {
+  margin: 2em;
+  text-align: center;
+  font-family: 'Newsreader', sans-serif;
+  color: white;
+  text-decoration: overline;
+  text-decoration-color: white; }
+
+.card-text2 {
+  color: white;
+  text-align: center;
+  margin: 3em; }
+
+.card-text3 {
+  color: white;
+  text-align: left;
+  opacity: 0.5;
+  margin-left: 30px;
+  margin-bottom: 3em; }
+
+.card-body2 {
+  background-color: #13132b;
+  border: 5px solid #8c3331; }
+
+.card-body2::before,
+.card-body2::after {
+  content: '';
+  position: absolute;
+  border: inherit;
+  transition: all .5s;
+  width: 40px;
+  height: 40px; }
+
+.card-body2::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px; }
+
+.card-body2::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0; }
+
+.card-body2:hover::before,
+.card-body2:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px); }
 
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: justify; }
 
 .card-link + .card-link {
   margin-left: 1rem; }
@@ -7835,7 +7906,7 @@ main {
     display: none; }
   main .seo {
     background-color: #f9faf0;
-    color: #fff; }
+    color: black; }
     main .seo .imgicons {
       display: none; }
     main .seo .mediaicons {
@@ -7887,13 +7958,13 @@ main {
     transform: translateX(-50%); } }
   main .enfoquesection h2, main .enfoquesection .h2 {
     font-family: 'Newsreader',sans-serif;
-    padding: 3em;
+    padding: 3em 3em 0em 3em;
     text-align: center;
     font-size: 1.8em; }
   main .enfoquesection .textoenf1 {
     padding: 1em 3em 0 3em; }
   main .enfoquesection .textoenf2 {
-    padding: 1em 3em 3em 3em; }
+    padding: 1em 3em 0em 3em; }
   main .capacidades .titulo-capacidades {
     font-family: 'Newsreader', sans-serif;
     padding: 3em;
@@ -7991,9 +8062,7 @@ footer {
   /* Header MQ */
   header {
     display: grid;
-    grid-template-areas: "h1 img img img"
- "h3 img img img"
- "boton1 img img img"; }
+    grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
     header .headerimg {
       grid-area: img;
       display: block;
@@ -8034,8 +8103,7 @@ footer {
       margin-bottom: 400px; }
     header .headerserv {
       display: grid;
-      grid-template-areas: "img2 img2 h1"
- "img2 img2 p"; }
+      grid-template-areas: "img2 img2 h1" "img2 img2 p"; }
   main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
     padding: 0em 3em 2em 3em;
     font-size: 3em;
@@ -8055,20 +8123,18 @@ footer {
     transition: background-size 500ms; }
   main .descripcionwd {
     display: grid;
-    grid-template-areas: "textosdiv fotosdiv"
- "textosdiv fotosdiv"
- "textosdiv fotosdiv";
+    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv";
     padding: 3em; }
     main .descripcionwd .textosdiv {
       grid-area: textosdiv; }
     main .descripcionwd .titulo-wd {
-      padding: 3em 3em 2em 3em;
+      padding: 3em 3em 0em 3em;
       font-size: 2em; }
     main .descripcionwd .textos-wd {
       margin: 3em;
       padding: 3em 3em 3em 3em;
-      background: #80abcd;
-      background-image: linear-gradient(90deg, #ffff, #efeaf4, #dbdaeb, #bfc9e2, #9cb9d9, #72a8cf, #4494c3, #1b7db6, #0668a1, #045281, #045281);
+      background: #e7eded;
+      background: radial-gradient(circle, #e7eded 76%, rgba(36, 152, 226, 0.958719) 132%);
       color: black; }
     main .descripcionwd .texto-3wd {
       display: none; }
@@ -8085,27 +8151,40 @@ footer {
       color: #3f45eb;
       padding: 1.4em;
       margin-left: 20px;
-      color: brown; }
+      color: brown;
+      font-size: 1em; }
+      main .seo .mediaicons .fa-solid, main .seo .mediaicons .fa-brands {
+        font-size: 1em;
+        margin-bottom: none; }
     main .seo .titulomedias {
       font-family: 'Lato', sans-serif;
       margin: 30px 30px;
       padding-top: 30px; }
-  main .enfoquesection h2, main .enfoquesection .h2 {
-    font-family: 'Newsreader',sans-serif;
-    padding: 3em 3em 1.5em 3em;
-    text-align: center;
-    font-size: 5em; }
-  main .enfoquesection .textoenf1 {
-    padding: 1em 3em 0 3em;
-    text-align: center; }
-  main .enfoquesection .textoenf2 {
-    padding: 1em 3em 3em 3em;
-    text-align: center; }
-  main .capacidades .titulo-capacidades {
-    font-family: 'Newsreader', sans-serif;
-    padding: 3em 3em 1.5em 3em;
-    text-align: center;
-    font-size: 5em; }
+  main .enfoquesection {
+    margin: 0;
+    padding: 0;
+    background: url(../img/waves5.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif; }
+    main .enfoquesection h2, main .enfoquesection .h2 {
+      font-family: 'Newsreader',sans-serif;
+      padding: 3em 3em 1.5em 3em;
+      text-align: center;
+      font-size: 5em; }
+    main .enfoquesection .textoenf1 {
+      padding: 1em 3em 0 3em;
+      text-align: center; }
+    main .enfoquesection .textoenf2 {
+      padding: 1em 3em 3em 3em;
+      text-align: center; }
+  main .capacidades {
+    margin-bottom: 20em; }
+    main .capacidades .titulo-capacidades {
+      font-family: 'Newsreader', sans-serif;
+      padding: 3em 3em 1.5em 3em;
+      text-align: center;
+      font-size: 5em; }
   @keyframes shine {
     from {
       background-position: center 0; }

@@ -4,6 +4,9 @@
 
 @if $enable-grid-classes {
   .row {
+    padding-left: 3em; 
+    padding-right: 3em;  
+    margin: 2em;
     @include make-row();
 
     > * {

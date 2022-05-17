@@ -5,7 +5,6 @@ main {
         text-align: justify;
         margin: 3em;
         
-        
         .titulo-objetivo{
             color: $colorprimary;
             text-align: center;
@@ -43,7 +42,7 @@ main {
 
     @mixin background-alt {
         background-color: #f9faf0;
-        color: #fff;
+        color: black;
     }
     
     .seo{
@@ -124,7 +123,7 @@ main {
     .enfoquesection{
         h2{
             font-family: 'Newsreader',sans-serif;
-            padding: 3em;
+            padding: 3em 3em 0em 3em;
             text-align: center;
             font-size: 1.8em;
         }
@@ -134,7 +133,7 @@ main {
         }
 
         .textoenf2{
-            padding: 1em 3em 3em 3em;
+            padding: 1em 3em 0em 3em;
         }
     }
 

@@ -53,6 +53,84 @@
 
 .card-title {
   margin-bottom: $card-title-spacer-y;
+  color: blue; text-align: center
+}
+
+.card2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  height: $card-height;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+  @include box-shadow($card-box-shadow);
+  border-color: white;
+  border-radius: 20px;
+  padding: 3em;
+}
+
+.card2:hover{
+  transform: translate(-15px, -30px);
+}
+
+.card-title2 {
+  margin: 2em;
+  text-align: center;
+  font-family: 'Newsreader', sans-serif;
+  color: white;
+  text-decoration: overline;
+  text-decoration-color: white;
+}
+
+.card-text2 {
+  color: white;
+  text-align: center;
+  margin: 3em;
+}
+
+.card-text3 {
+  color: white;
+  text-align: left;
+  opacity: 0.5;
+  margin-left: 30px;
+  margin-bottom: 3em;
+}
+
+.card-body2 {
+  background-color: #13132b;
+  border: 5px solid #8c3331;
+}
+
+.card-body2::before,
+.card-body2::after{
+  content: '';
+  position: absolute;
+  border: inherit;
+  transition: all .5s;
+  width: 40px;
+  height: 40px;
+}
+
+.card-body2::before{
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.card-body2::after{
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+
+.card-body2:hover::before,
+.card-body2:hover::after{
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
 }
 
 .card-subtitle {
@@ -62,6 +140,7 @@
 
 .card-text:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .card-link {
