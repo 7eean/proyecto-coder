@@ -3459,6 +3459,13 @@ textarea.form-control-lg {
   background-color: #13132b;
   border: 5px solid #8c3331; }
 
+.card4 {
+  margin-left: 40em; }
+
+.card-body4 {
+  background-color: white;
+  border: 5px solid; }
+
 .card-body2::before,
 .card-body2::after {
   content: '';
@@ -7915,7 +7922,6 @@ main {
       margin-left: 70px; }
     main .seo .titulomedias {
       font-family: 'Lato', sans-serif;
-      margin: 30px 30px;
       padding-top: 30px; }
   main .sectionbutton1 {
     text-align: center;
@@ -8034,7 +8040,8 @@ footer {
     font-size: 1.3em; }
   footer .fa-brands {
     color: #fff;
-    animation: first_color .5s ease-in-out infinite alternate; }
+    animation: first_color .5s ease-in-out infinite alternate;
+    font-size: 3em; }
   footer .fa-brands:nth-child(2) {
     animation-name: second_color; }
   footer .fa-brands:nth-child(3) {
@@ -8087,9 +8094,7 @@ footer {
       display: block;
       grid-area: img2;
       width: 100%;
-      height: 110%;
-      margin-top: 50px;
-      padding-bottom: 200px; }
+      margin-top: 50px; }
     header #h1-services {
       grid-area: h1;
       color: black;
@@ -8103,7 +8108,22 @@ footer {
       margin-bottom: 400px; }
     header .headerserv {
       display: grid;
-      grid-template-areas: "img2 img2 h1" "img2 img2 p"; }
+      grid-template-areas: "img2 img2 h1" "img2 img2 p";
+      margin: 0;
+      padding: 0;
+      background: url(../img/wavesheader.png);
+      background-size: cover;
+      background-position: center; }
+  .news-container .header-empresas {
+    display: block; }
+    .news-container .header-empresas .subtitulo-main-empresas {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2em; }
+    .news-container .header-empresas .titulo-main-emp {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 1em; }
   main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
     padding: 0em 3em 2em 3em;
     font-size: 3em;
@@ -8133,8 +8153,7 @@ footer {
     main .descripcionwd .textos-wd {
       margin: 3em;
       padding: 3em 3em 3em 3em;
-      background: #e7eded;
-      background: radial-gradient(circle, #e7eded 76%, rgba(36, 152, 226, 0.958719) 132%);
+      background-color: #ffffff;
       color: black; }
     main .descripcionwd .texto-3wd {
       display: none; }
@@ -8146,50 +8165,138 @@ footer {
         height: 500px;
         margin-left: 100px; }
   main .seo {
-    background-color: #f9faf0; }
+    background-color: #13132b;
+    color: white; }
     main .seo .mediaicons {
-      color: #3f45eb;
+      color: white;
       padding: 1.4em;
       margin-left: 20px;
-      color: brown;
       font-size: 1em; }
       main .seo .mediaicons .fa-solid, main .seo .mediaicons .fa-brands {
         font-size: 1em;
         margin-bottom: none; }
     main .seo .titulomedias {
       font-family: 'Lato', sans-serif;
-      margin: 30px 30px;
       padding-top: 30px; }
   main .enfoquesection {
     margin: 0;
     padding: 0;
-    background: url(../img/waves5.png);
+    background: url(../img/waves7.png);
     background-size: cover;
     background-position: center;
     font-family: sans-serif; }
     main .enfoquesection h2, main .enfoquesection .h2 {
       font-family: 'Newsreader',sans-serif;
-      padding: 3em 3em 1.5em 3em;
+      padding-bottom: 1em;
       text-align: center;
       font-size: 5em; }
     main .enfoquesection .textoenf1 {
-      padding: 1em 3em 0 3em;
+      padding: 1em 1em 0 3em;
       text-align: center; }
     main .enfoquesection .textoenf2 {
-      padding: 1em 3em 3em 3em;
+      padding: 1em 1em 3em 3em;
       text-align: center; }
   main .capacidades {
-    margin-bottom: 20em; }
+    margin-bottom: 7em; }
     main .capacidades .titulo-capacidades {
       font-family: 'Newsreader', sans-serif;
-      padding: 3em 3em 1.5em 3em;
+      margin-top: 10px;
+      padding: 0;
+      padding-bottom: 1.5em;
+      padding-top: 1em;
       text-align: center;
       font-size: 5em; }
   @keyframes shine {
     from {
       background-position: center 0; }
     to {
-      background-position: center 200%; } } }
+      background-position: center 200%; } }
+  main .text-container {
+    background-color: #13132b;
+    color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: row; }
+    main .text-container h2, main .text-container .h2 {
+      padding-left: 4em;
+      padding-top: 3em; }
+    main .text-container .botoncontactplanes .myButton {
+      box-shadow: 3px 4px 6px 1px #8a2a21;
+      background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+      background-color: #c62d1f;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 19px;
+      padding: 10px 48px;
+      text-decoration: none;
+      text-shadow: -1px 1px 36px #700c04;
+      font-family: 'Prompt', sans-serif;
+      margin-left: 150px;
+      margin-top: 5em; }
+    main .text-container .botoncontactplanes .myButton:hover {
+      background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+      background-color: #f24437; }
+    main .text-container .botoncontactplanes .myButton:active {
+      position: relative;
+      top: 1px; }
+  main .carda, main .cardb, main .cardc, main .carde, main .cardf, main .cardg, main .cardh, main .cardi {
+    width: 170px;
+    height: 180px;
+    background-color: #ffffff;
+    border: 5px solid;
+    border-image: linear-gradient(#0f054d, #7054ed, #1c64ff) 1;
+    animation: rotate 3s ease-in infinite;
+    border-radius: 20px; }
+  @keyframes rotate {
+    50% {
+      border-image: linear-gradient(360deg, #ff3ba3, #dd2476, #1c64ff) 1; } }
+  main .carda:hover, main .cardb:hover, main .cardc:hover, main .carde:hover, main .cardf:hover, main .cardg:hover, main .cardh:hover, main .cardi:hover {
+    transform: translatex(-25px) translateY(-15px); }
+  main .section-empresas {
+    display: grid;
+    grid-template-areas: "card1 card2 card3 card4" "card5 card6 card7 card8";
+    margin-left: 10em;
+    padding-bottom: 10em; }
+    main .section-empresas .imgi {
+      margin-top: 40px;
+      margin-left: 5px; }
+  main .capacitaciones-section {
+    background-color: #13132b;
+    text-align: center;
+    height: 350px; }
+    main .capacitaciones-section span {
+      width: 350px;
+      color: white; }
+    main .capacitaciones-section h3, main .capacitaciones-section .h3 {
+      color: white;
+      font-size: 2em;
+      padding: 0.6em; }
+    main .capacitaciones-section h2, main .capacitaciones-section .h2 {
+      color: white;
+      font-size: 2em;
+      padding: 0.6em; }
+    main .capacitaciones-section .myButton {
+      box-shadow: 3px 4px 6px 1px #8a2a21;
+      background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+      background-color: #c62d1f;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 5px 24px;
+      text-decoration: none;
+      text-shadow: -1px 1px 36px #700c04;
+      font-family: 'Prompt', sans-serif;
+      margin-top: 2em; }
+    main .capacitaciones-section .myButton:hover {
+      background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+      background-color: #f24437; }
+    main .capacitaciones-section .myButton:active {
+      position: relative;
+      top: 1px; } }
 
 @media screen and (min-width: 760px) and (min-width: 1080px) {
   #boton11 {
