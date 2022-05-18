@@ -249,7 +249,7 @@
             padding-top: 3em;
         }
 
-        .botoncontactplanes,{
+        .botoncontactplanes{
             .myButton {
                 box-shadow: 3px 4px 6px 1px #8a2a21;
                 background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
@@ -321,10 +321,6 @@
 
     .cardh {
         @extend .carda
-    }
-
-    .cardh {
-        @extend .carda;
     }
 
     .cardi {

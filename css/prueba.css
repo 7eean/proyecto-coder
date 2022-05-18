@@ -7982,6 +7982,147 @@ main {
     margin-top: 70px; }
     main .contactanosmain h2, main .contactanosmain .h2 {
       color: azure; }
+  main .section-empresas {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 10em;
+    padding-bottom: 5em; }
+    main .section-empresas .imgi {
+      margin-top: 20px;
+      margin-left: 2px; }
+  main .carda, main .cardb, main .cardc, main .carde, main .cardf, main .cardg, main .cardh, main .cardi {
+    width: 160px;
+    height: 140px;
+    background-color: #ffffff;
+    border: 5px solid;
+    border-image: linear-gradient(#0f054d, #7054ed, #1c64ff) 1;
+    animation: rotate 3s ease-in infinite;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+
+@keyframes rotate {
+  50% {
+    border-image: linear-gradient(360deg, #ff3ba3, #dd2476, #1c64ff) 1; } }
+  main .h3-cartas {
+    text-align: center;
+    margin-bottom: 1em; }
+  main .capacitaciones-section {
+    background-color: #13132b;
+    text-align: center;
+    height: 350px; }
+    main .capacitaciones-section span {
+      width: 350px;
+      color: white; }
+    main .capacitaciones-section h3, main .capacitaciones-section .h3 {
+      color: white;
+      font-size: 2em;
+      padding: 0.6em; }
+    main .capacitaciones-section h2, main .capacitaciones-section .h2 {
+      color: white;
+      font-size: 2em;
+      padding: 0.6em; }
+    main .capacitaciones-section .myButton {
+      box-shadow: 3px 4px 6px 1px #8a2a21;
+      background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+      background-color: #c62d1f;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 5px 24px;
+      text-decoration: none;
+      text-shadow: -1px 1px 36px #700c04;
+      font-family: 'Prompt', sans-serif;
+      margin-top: 2em; }
+    main .capacitaciones-section .myButton:hover {
+      background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+      background-color: #f24437; }
+    main .capacitaciones-section .myButton:active {
+      position: relative;
+      top: 1px; }
+  main .queofrecemos {
+    padding: 3em; }
+    main .queofrecemos .tituloqueofrecemos {
+      margin-bottom: 0.7em;
+      text-align: center; }
+    main .queofrecemos .texto2queofrecemos {
+      display: none; }
+    main .queofrecemos .divlista1 {
+      background-color: #0f054d;
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px; }
+    main .queofrecemos .lilista1 {
+      padding-top: 0.4em;
+      padding-bottom: 0.4em; }
+  main .sencillo {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em; }
+    main .sencillo .titulosencillo {
+      margin-bottom: 0.7em;
+      text-align: center; }
+  main .escuchamos {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em; }
+    main .escuchamos .subtituloescuchamos {
+      margin-bottom: 0.3em;
+      text-align: center; }
+    main .escuchamos .tituloescuchamos {
+      margin-bottom: 0.7em;
+      text-align: center; }
+    main .escuchamos .divlista2 {
+      background-color: #0f054d;
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px; }
+      main .escuchamos .divlista2 .lilista2 {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em; }
+  main .form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000; }
+    main .form-register h2, main .form-register .h2 {
+      font-size: 22px;
+      margin-bottom: 20px; }
+    main .form-register a {
+      color: white;
+      text-decoration: none; }
+    main .form-register a:hover {
+      color: white;
+      text-decoration: underline; }
+    main .form-register .botons {
+      width: 100%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px; }
+    main .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px; }
+  main .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white; }
 
 header {
   font-family: 'DM Sans', sans-serif; }
@@ -8025,6 +8166,22 @@ header .imgserv1 {
 
 header .textheader-serv {
   padding: 3em; }
+
+.news-container .header-empresas {
+  display: block; }
+  .news-container .header-empresas .subtitulo-main-empresas {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 0.5em; }
+
+header h2, header .h2 {
+  text-align: center;
+  padding: 1em; }
+
+header .titulo-main {
+  margin-top: 2em;
+  text-align: center; }
 
 footer {
   text-align: center;
@@ -8252,7 +8409,7 @@ footer {
   @keyframes rotate {
     50% {
       border-image: linear-gradient(360deg, #ff3ba3, #dd2476, #1c64ff) 1; } }
-  main .carda:hover, main .cardb:hover, main .cardc:hover, main .carde:hover, main .cardf:hover, main .cardg:hover, main .cardh:hover, main .cardi:hover {
+  main .cardb:hover, main .carda:hover, main .cardc:hover, main .carde:hover, main .cardf:hover, main .cardg:hover, main .cardh:hover, main .cardi:hover {
     transform: translatex(-25px) translateY(-15px); }
   main .section-empresas {
     display: grid;

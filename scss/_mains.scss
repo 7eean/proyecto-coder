@@ -156,4 +156,216 @@ main {
         }
     }
 
+    .section-empresas {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 10em;
+        padding-bottom: 5em;
+
+
+        .imgi{
+            margin-top: 20px;
+            margin-left: 2px;
+        }   
+    }
+
+    .cardb {
+        width: 160px;
+        height: 140px;
+        background-color: #ffffff;
+        border: 5px solid;
+        border-image: linear-gradient( #0f054d, #7054ed, #1c64ff) 1;
+        animation: rotate 3s ease-in infinite;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        @keyframes rotate {
+            50%{
+                border-image: linear-gradient(360deg, #ff3ba3, #dd2476, #1c64ff) 1;
+            }
+        }
+    }
+
+    .carda {
+        @extend .cardb;
+    }
+
+    .h3-cartas {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .capacitaciones-section {
+        background-color: #13132b;
+        text-align: center;
+        height: 350px;
+
+        span {
+            width: 350px;
+            color: white;
+        }
+
+        h3{
+            color: white;
+            font-size: 2em;
+            padding: 0.6em;
+        }
+
+        h2{
+            color: white;
+            font-size: 2em;
+            padding: 0.6em;
+        }
+
+        .myButton {
+            box-shadow: 3px 4px 6px 1px #8a2a21;
+            background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+            background-color:#c62d1f;
+            border-radius:3px;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-size:15px;
+            padding:5px 24px;
+            text-decoration:none;
+            text-shadow:-1px 1px 36px #700c04;
+            font-family: 'Prompt', sans-serif;
+            
+            margin-top: 2em;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+            background-color:#f24437;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+    }
+
+    // About 
+    
+
+    .queofrecemos{
+        padding: 3em;
+        
+        .tituloqueofrecemos{
+            margin-bottom: 0.7em;
+            text-align: center;
+        }
+
+        .texto2queofrecemos{
+            display: none;
+        }
+
+        .divlista1{
+            background-color: #0f054d;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .lilista1{
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+        }
+    }
+
+    .sencillo{
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 3em;
+
+        .titulosencillo{
+            margin-bottom: 0.7em;
+            text-align: center;
+        }
+    }
+
+    .escuchamos{
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 2em;
+
+        .subtituloescuchamos {
+            margin-bottom: 0.3em;
+            text-align: center;
+        }
+
+        .tituloescuchamos{
+            margin-bottom: 0.7em;
+            text-align: center;
+        }
+
+        .divlista2{
+            background-color: #0f054d;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+
+            .lilista2{
+                padding-top: 0.4em;
+                padding-bottom: 0.4em;
+            }
+        }
+    }
+
+    // Contact 
+    .form-register{
+        width: 400px;
+        background: #24303c;
+        padding: 30px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-radius: 4px;
+        font-family: 'Prompt', sans-serif;
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+
+        h2{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .botons{
+            width: 100%;
+            background: #1f53c5;
+            border: none;
+            padding: 12px;
+            color: white;
+            margin: 16px 0;
+            font-size: 16px;
+        }
+
+        p{
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    .controls{
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-size: 18px;
+        color: white;
+    }
+    
+
 }
