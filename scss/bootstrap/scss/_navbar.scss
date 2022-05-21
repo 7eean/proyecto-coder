@@ -42,17 +42,17 @@
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: end;;
+    justify-content: end;
   }
 
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
-      display: flex;
-      flex-wrap: inherit;
-      align-items: center;
-      justify-content: end;
-    }
-  }
+  // @each $breakpoint, $container-max-width in $container-max-widths {
+  //   > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
+  //     display: flex;
+  //     flex-wrap: inherit;
+  //     align-items: center;
+  //     justify-content: end;
+  //   }
+  // }
 }
 
 
@@ -67,6 +67,8 @@
   @include font-size($navbar-brand-font-size);
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap;
+  margin-left: 30px;
+  margin-top: 30px;
   
 
   &:hover,
@@ -258,12 +260,10 @@
   }
 
   .navbar-nav {
-    padding-top: 3em;
+    padding-top: 1em;
     .nav-link {
-      color: $navbar-light-color;
-
-      .nav-item{}
-
+      padding: 1.5em;
+      
       &:hover,
       &:focus {
         color: $navbar-light-hover-color;

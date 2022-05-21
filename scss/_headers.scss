@@ -2,12 +2,11 @@
 header {
     font-family: 'DM Sans', sans-serif;
     
-
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
         text-align: center;
         margin-bottom: 0.5em;
-        margin-top: 0.7em;
+        margin-top: 1em;
         font-family: 'Press Start 2P', sans-serif;
         color: black;
         background: url(../img/fondoprueba3.jpg);
@@ -26,8 +25,13 @@ header {
         }
     }
 
-    img {
-       display: none;
+    .headerimg {
+       display: none; 
+    }
+
+    .headerimg2 {
+        display: block;
+        justify-content: center;
     }
     
     h3{
@@ -39,8 +43,7 @@ header {
         display: none;
     }
     
-    
-}   
+}
 
 /* Services */
 header {
