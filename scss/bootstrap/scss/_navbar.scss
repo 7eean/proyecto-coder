@@ -19,12 +19,13 @@
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
-  justify-content: space-between; // space out brand from logo
+  justify-content: end; // space out brand from logo
   padding-top: $navbar-padding-y;
   padding-right: $navbar-padding-x; // default: null
   padding-bottom: $navbar-padding-y;
   padding-left: $navbar-padding-x; // default: null
   @include gradient-bg();
+  background-color: aqua;
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -33,17 +34,23 @@
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
   }
 
   > .container,
   > .container-fluid {
-    @extend %container-flex-properties;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: end;;
   }
 
   @each $breakpoint, $container-max-width in $container-max-widths {
     > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
-      @extend %container-flex-properties;
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: end;
     }
   }
 }
@@ -60,6 +67,7 @@
   @include font-size($navbar-brand-font-size);
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap;
+  
 
   &:hover,
   &:focus {
@@ -113,9 +121,8 @@
   flex-grow: 1;
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
-  align-items: center;
-  
-
+  margin-left: 5px;
+  text-align: center;
 }
 
 // Button for toggling the navbar when in its collapsed state
@@ -127,7 +134,7 @@
   border: $border-width solid transparent; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
   @include transition($navbar-toggler-transition);
-
+  
   &:hover {
     text-decoration: none;
   }
@@ -147,7 +154,7 @@
   height: 1.5em;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: 100%;
 }
 
@@ -168,18 +175,18 @@
     &#{$infix} {
       @include media-breakpoint-up($next) {
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: end;
 
         .navbar-nav {
           flex-direction: row;
 
           .dropdown-menu {
-            position: absolute;
+            position: end;
           }
 
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
-            padding-left: $navbar-nav-link-padding-x;
+            padding-left: 3em;
           }
         }
 
@@ -196,12 +203,16 @@
           display: none;
         }
 
+        .navbar-toggler.collapsed{
+          color: blue;
+        }
+
         .offcanvas-header {
           display: none;
         }
 
         .offcanvas {
-          position: inherit;
+          position: end;
           bottom: 0;
           z-index: 1000;
           flex-grow: 1;
@@ -247,8 +258,11 @@
   }
 
   .navbar-nav {
+    padding-top: 3em;
     .nav-link {
       color: $navbar-light-color;
+
+      .nav-item{}
 
       &:hover,
       &:focus {

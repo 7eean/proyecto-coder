@@ -83,7 +83,8 @@ header {
 
 // About 
 
-header {
+.header-about {
+    display: block;
     h2{
         text-align: center;
         padding: 1em;
@@ -95,4 +96,11 @@ header {
     }
 }
 
+
+// Contact
+.contact-container {
+    .header-contact{
+        display: block;
+    }
+}
 
