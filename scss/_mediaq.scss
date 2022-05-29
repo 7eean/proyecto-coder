@@ -1,7 +1,7 @@
 @media screen and (min-width: 420px) {
     header {
         .headerimg2{
-            display: none;
+            display: block;
         }
     }
 }
@@ -16,6 +16,10 @@
         "h1 img img img"
         "h3 img img img"
         "boton1 img img img";
+
+        h1{
+            display: block;
+        }
 
 
         .headerimg {
@@ -35,6 +39,7 @@
             margin-top: 50px;
             margin-bottom: 0.1em;
             font-size: 3em;
+            display: block;
 
         }
 
@@ -64,6 +69,7 @@
             margin-bottom: 0em;
             margin-top: 3em;
             text-align: center;
+            display: block;
         }
 
         .textheader-serv{
@@ -175,6 +181,12 @@
                    margin-left: 100px;
                }
            }
+        }
+
+        .mainaboutus{
+            h2{
+                padding: 2em;
+            }
         }
 
     .seo{

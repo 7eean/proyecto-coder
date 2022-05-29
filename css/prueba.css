@@ -3023,7 +3023,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
-  margin-left: 30px;
+  margin-left: 10px;
   margin-top: 30px; }
 
 .navbar-nav {
@@ -3046,7 +3046,8 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   margin-left: 5px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'DM Sans', sans-serif; }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -7933,6 +7934,36 @@ main {
     border-radius: 20px; }
   main .descripcionwd #fotosdiv {
     display: none; }
+  main .text-container {
+    background-color: #13132b;
+    color: white;
+    height: 450px;
+    display: flex;
+    flex-direction: column; }
+    main .text-container h2, main .text-container .h2 {
+      padding-left: 4em;
+      padding-top: 3em; }
+    main .text-container .botoncontactplanes .myButton {
+      box-shadow: 3px 4px 6px 1px #8a2a21;
+      background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+      background-color: #c62d1f;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 19px;
+      padding: 10px 48px;
+      text-decoration: none;
+      text-shadow: -1px 1px 36px #700c04;
+      font-family: 'Prompt', sans-serif;
+      margin-left: 150px;
+      margin-top: 5em; }
+    main .text-container .botoncontactplanes .myButton:hover {
+      background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+      background-color: #f24437; }
+    main .text-container .botoncontactplanes .myButton:active {
+      position: relative;
+      top: 1px; }
   main .seo {
     background-color: #f9faf0;
     color: black; }
@@ -8159,7 +8190,8 @@ header {
     background-size: auto 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite; }
+    animation: shine 8s linear infinite;
+    display: none; }
 
 @keyframes shine {
   from {
@@ -8170,7 +8202,9 @@ header {
     display: none; }
   header .headerimg2 {
     display: block;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%;
+    height: 500px; }
   header h3, header .h3 {
     display: none;
     color: #3f45eb; }
@@ -8184,7 +8218,8 @@ header #h1-services {
   font-family: 'Press Start 2P', sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.7em;
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 header .imgserv1 {
   display: none; }
@@ -8194,6 +8229,8 @@ header .textheader-serv {
 
 .news-container .header-empresas {
   display: block; }
+  .news-container .header-empresas .titulo-main-emp {
+    display: block; }
   .news-container .header-empresas .subtitulo-main-empresas {
     font-size: 2em;
     text-align: center;
@@ -8202,6 +8239,8 @@ header .textheader-serv {
 
 .header-about {
   display: block; }
+  .header-about h1, .header-about .h1 {
+    display: block; }
   .header-about h2, .header-about .h2 {
     text-align: center;
     padding: 1em; }
@@ -8211,6 +8250,12 @@ header .textheader-serv {
 
 .contact-container .header-contact {
   display: block; }
+
+.contact-container h1, .contact-container .h1 {
+  display: block; }
+
+.contact-container h2, .contact-container .h2 {
+  text-align: center; }
 
 footer {
   text-align: center;
@@ -8253,13 +8298,15 @@ footer {
 
 @media screen and (min-width: 420px) {
   header .headerimg2 {
-    display: none; } }
+    display: block; } }
 
 @media screen and (min-width: 760px) {
   /* Header MQ */
   header {
     display: grid;
     grid-template-areas: "h1 img img img" "h3 img img img" "boton1 img img img"; }
+    header h1, header .h1 {
+      display: block; }
     header .headerimg {
       grid-area: img;
       display: block;
@@ -8272,7 +8319,8 @@ footer {
       text-align: center;
       margin-top: 50px;
       margin-bottom: 0.1em;
-      font-size: 3em; }
+      font-size: 3em;
+      display: block; }
     header .subtitulo1 {
       grid-area: h3;
       font-family: 'Prompt', sans-serif;
@@ -8294,7 +8342,8 @@ footer {
       font-family: 'Press Start 2P', sans-serif;
       margin-bottom: 0em;
       margin-top: 3em;
-      text-align: center; }
+      text-align: center;
+      display: block; }
     header .textheader-serv {
       grid-area: p;
       margin-bottom: 400px; }
@@ -8356,6 +8405,8 @@ footer {
       main .descripcionwd #fotosdiv img {
         height: 500px;
         margin-left: 100px; }
+  main .mainaboutus h2, main .mainaboutus .h2 {
+    padding: 2em; }
   main .seo {
     background-color: #13132b;
     color: white; }

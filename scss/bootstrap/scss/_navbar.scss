@@ -67,7 +67,7 @@
   @include font-size($navbar-brand-font-size);
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap;
-  margin-left: 30px;
+  margin-left: 10px;
   margin-top: 30px;
   
 
@@ -125,6 +125,7 @@
   // properly vertically. Can be easily overridden with flex utilities.
   margin-left: 5px;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
 }
 
 // Button for toggling the navbar when in its collapsed state

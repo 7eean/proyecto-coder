@@ -37,7 +37,47 @@ main {
         #fotosdiv {
             display: none;
         }
+    }
 
+    .text-container{
+        background-color: #13132b;
+        color: white;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            padding-left: 4em;
+            padding-top: 3em;
+        }
+
+        .botoncontactplanes{
+            .myButton {
+                box-shadow: 3px 4px 6px 1px #8a2a21;
+                background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+                background-color:#c62d1f;
+                border-radius:3px;
+                display:inline-block;
+                cursor:pointer;
+                color:#ffffff;
+                font-size:19px;
+                padding:10px 48px;
+                text-decoration:none;
+                text-shadow:-1px 1px 36px #700c04;
+                font-family: 'Prompt', sans-serif;
+                margin-left: 150px;
+                margin-top: 5em;
+            }
+            .myButton:hover {
+                background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+                background-color:#f24437;
+            }
+            .myButton:active {
+                position:relative;
+                top:1px;
+            }
+            
+        }
     }
 
     @mixin background-alt {
