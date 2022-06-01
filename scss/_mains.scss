@@ -7,7 +7,7 @@ main {
         
         .titulo-objetivo{
             color: $colorprimary;
-            text-align: center;
+            text-align: left;
             font-size: 1.9em;
         }
 
@@ -81,8 +81,8 @@ main {
     }
 
     @mixin background-alt {
-        background-color: #f9faf0;
-        color: black;
+        background-color: #001220;
+        color: white;
     }
     
     .seo{
@@ -95,7 +95,7 @@ main {
         .mediaicons{
             color: brown;
             padding: 1.4em;
-            margin-left: 70px;
+            margin-left: 6px;
         }
 
         .titulomedias{
@@ -106,7 +106,7 @@ main {
 
     .sectionbutton1{
         text-align: center;
-        padding: 4em 4em 8em 4em;
+        padding: 1em 1em 3em 1em;
         
     }
 
@@ -162,26 +162,29 @@ main {
     .enfoquesection{
         h2{
             font-family: 'Newsreader',sans-serif;
-            padding: 3em 3em 0em 3em;
-            text-align: center;
+            padding: 3em 3em 0em 0.4em;
+            text-align: left;
             font-size: 1.8em;
+            color: $colorprimary;
         }
 
         .textoenf1{
-            padding: 1em 3em 0 3em;
+            padding: 1em 3em 0em 0.4em;
         }
 
         .textoenf2{
             padding: 1em 3em 0em 3em;
+            display: none;
         }
     }
 
     .capacidades{
         .titulo-capacidades{
             font-family: 'Newsreader', sans-serif;
-            padding: 3em;
-            text-align: center;
+            padding: 1.6em 3em 2em 0.4em;
+            text-align: left;
             font-size: 1.8em;
+            color: $colorprimary;
         }
     }
   
@@ -287,11 +290,16 @@ main {
     
 
     .queofrecemos{
-        padding: 3em;
+        padding: 2em;
         
         .tituloqueofrecemos{
             margin-bottom: 0.7em;
-            text-align: center;
+            text-align: left;
+            color: $colorprimary;
+        }
+
+        .texto1queofrecemos{
+            padding: 1em 1em 1em 0em;
         }
 
         .texto2queofrecemos{
@@ -303,6 +311,7 @@ main {
             color: white;
             margin-top: 20px;
             border-radius: 10px;
+            box-shadow: 7px 13px 37px #000;
         }
 
         .lilista1{
@@ -312,29 +321,32 @@ main {
     }
 
     .sencillo{
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
 
         .titulosencillo{
             margin-bottom: 0.7em;
-            text-align: center;
+            text-align: left;
+            color: $colorprimary;
         }
     }
 
     .escuchamos{
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
         padding-bottom: 2em;
 
         .subtituloescuchamos {
             margin-bottom: 0.3em;
-            text-align: center;
+            text-align: left;
+            color: #0f054d;
         }
 
         .tituloescuchamos{
             margin-bottom: 0.7em;
-            text-align: center;
+            text-align: left;
+            color: $colorprimary;
         }
 
         .divlista2{
@@ -342,6 +354,7 @@ main {
             color: white;
             margin-top: 20px;
             border-radius: 10px;
+            box-shadow: 7px 13px 37px #000;
 
             .lilista2{
                 padding-top: 0.4em;

@@ -7917,7 +7917,7 @@ main {
     margin: 3em; }
     main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
       color: #3f45eb;
-      text-align: center;
+      text-align: left;
       font-size: 1.9em; }
     main .objetivos .texto-3, main .descripcionwd .texto-3, main .objetivos .imgobjetivos, main .descripcionwd .imgobjetivos {
       display: none; }
@@ -7965,20 +7965,20 @@ main {
       position: relative;
       top: 1px; }
   main .seo {
-    background-color: #f9faf0;
-    color: black; }
+    background-color: #001220;
+    color: white; }
     main .seo .imgicons {
       display: none; }
     main .seo .mediaicons {
       color: brown;
       padding: 1.4em;
-      margin-left: 70px; }
+      margin-left: 6px; }
     main .seo .titulomedias {
       font-family: 'Lato', sans-serif;
       padding-top: 30px; }
   main .sectionbutton1 {
     text-align: center;
-    padding: 4em 4em 8em 4em; }
+    padding: 1em 1em 3em 1em; }
   main .button4 {
     display: inline-block;
     text-decoration: none;
@@ -8017,18 +8017,21 @@ main {
     transform: translateX(-50%); } }
   main .enfoquesection h2, main .enfoquesection .h2 {
     font-family: 'Newsreader',sans-serif;
-    padding: 3em 3em 0em 3em;
-    text-align: center;
-    font-size: 1.8em; }
+    padding: 3em 3em 0em 0.4em;
+    text-align: left;
+    font-size: 1.8em;
+    color: #3f45eb; }
   main .enfoquesection .textoenf1 {
-    padding: 1em 3em 0 3em; }
+    padding: 1em 3em 0em 0.4em; }
   main .enfoquesection .textoenf2 {
-    padding: 1em 3em 0em 3em; }
+    padding: 1em 3em 0em 3em;
+    display: none; }
   main .capacidades .titulo-capacidades {
     font-family: 'Newsreader', sans-serif;
-    padding: 3em;
-    text-align: center;
-    font-size: 1.8em; }
+    padding: 1.6em 3em 2em 0.4em;
+    text-align: left;
+    font-size: 1.8em;
+    color: #3f45eb; }
   main .contactanosmain {
     background-color: #3f45eb;
     padding: 3em;
@@ -8095,42 +8098,50 @@ main {
       position: relative;
       top: 1px; }
   main .queofrecemos {
-    padding: 3em; }
+    padding: 2em; }
     main .queofrecemos .tituloqueofrecemos {
       margin-bottom: 0.7em;
-      text-align: center; }
+      text-align: left;
+      color: #3f45eb; }
+    main .queofrecemos .texto1queofrecemos {
+      padding: 1em 1em 1em 0em; }
     main .queofrecemos .texto2queofrecemos {
       display: none; }
     main .queofrecemos .divlista1 {
       background-color: #0f054d;
       color: white;
       margin-top: 20px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      box-shadow: 7px 13px 37px #000; }
     main .queofrecemos .lilista1 {
       padding-top: 0.4em;
       padding-bottom: 0.4em; }
   main .sencillo {
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 3em; }
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em; }
     main .sencillo .titulosencillo {
       margin-bottom: 0.7em;
-      text-align: center; }
+      text-align: left;
+      color: #3f45eb; }
   main .escuchamos {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 2em; }
     main .escuchamos .subtituloescuchamos {
       margin-bottom: 0.3em;
-      text-align: center; }
+      text-align: left;
+      color: #0f054d; }
     main .escuchamos .tituloescuchamos {
       margin-bottom: 0.7em;
-      text-align: center; }
+      text-align: left;
+      color: #3f45eb; }
     main .escuchamos .divlista2 {
       background-color: #0f054d;
       color: white;
       margin-top: 20px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      box-shadow: 7px 13px 37px #000; }
       main .escuchamos .divlista2 .lilista2 {
         padding-top: 0.4em;
         padding-bottom: 0.4em; }
@@ -8204,7 +8215,7 @@ header {
     display: block;
     justify-content: center;
     width: 100%;
-    height: 500px; }
+    height: 700px; }
   header h3, header .h3 {
     display: none;
     color: #3f45eb; }
@@ -8218,14 +8229,15 @@ header #h1-services {
   font-family: 'Press Start 2P', sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.7em;
-  text-align: center;
+  text-align: left;
+  margin-left: 0.4em;
   display: block; }
 
 header .imgserv1 {
   display: none; }
 
 header .textheader-serv {
-  padding: 3em; }
+  padding: 2em 2em 2em 0.4em; }
 
 .news-container .header-empresas {
   display: block; }
@@ -8235,15 +8247,20 @@ header .textheader-serv {
     font-size: 2em;
     text-align: center;
     margin-top: 1em;
-    margin-left: 0.5em; }
+    margin-left: 0.5em;
+    margin-bottom: 0.6em; }
 
 .header-about {
   display: block; }
   .header-about h1, .header-about .h1 {
-    display: block; }
+    display: block;
+    text-align: left;
+    margin-left: 0.4em; }
   .header-about h2, .header-about .h2 {
-    text-align: center;
-    padding: 1em; }
+    text-align: left;
+    margin-left: 0.4em;
+    margin-bottom: 1em;
+    margin-top: 1em; }
   .header-about .titulo-main {
     margin-top: 2em;
     text-align: center; }
@@ -8346,7 +8363,8 @@ footer {
       display: block; }
     header .textheader-serv {
       grid-area: p;
-      margin-bottom: 400px; }
+      margin-bottom: 400px;
+      padding: 3em; }
     header .headerserv {
       display: grid;
       grid-template-areas: "img2 img2 h1" "img2 img2 p";
@@ -8366,42 +8384,35 @@ footer {
       font-size: 3em;
       margin-top: 1em; }
   main .objetivos .titulo-objetivo, main .descripcionwd .titulo-objetivo {
-    padding: 0em 3em 2em 3em;
+    padding: 0em 1em 1em 2em;
     font-size: 3em;
     font-family: 'Prompt', sans-serif;
-    color: #ed779c; }
+    color: #3f45eb;
+    text-align: center; }
   main .objetivos .textosobj:hover, main .descripcionwd .textosobj:hover {
     background-size: 100% 100%;
     background-position-x: left;
     color: brown; }
   main .objetivos .textosobj, main .descripcionwd .textosobj {
     padding: 0.3em 3em 0.3em 3em;
-    text-align: center;
-    background-image: linear-gradient(#ced8f5, #ced8f5);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-position-x: right;
-    transition: background-size 500ms; }
+    text-align: center; }
   main .descripcionwd {
     display: grid;
-    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv";
-    padding: 3em; }
+    grid-template-areas: "textosdiv fotosdiv" "textosdiv fotosdiv" "textosdiv fotosdiv"; }
     main .descripcionwd .textosdiv {
       grid-area: textosdiv; }
     main .descripcionwd .titulo-wd {
-      padding: 3em 3em 0em 3em;
+      padding: 1em 1em 0em 1em;
       font-size: 2em; }
     main .descripcionwd .textos-wd {
       margin: 3em;
-      padding: 3em 3em 3em 3em;
+      padding: 2em 2em 1em 2em;
       background-color: #ffffff;
       color: black; }
-    main .descripcionwd .texto-3wd {
-      display: none; }
     main .descripcionwd #fotosdiv {
       display: none;
       grid-area: fotosdiv;
-      padding: 3em 3em 3em 3em; }
+      padding: 2em 1em 2em 1em; }
       main .descripcionwd #fotosdiv img {
         height: 500px;
         margin-left: 100px; }
@@ -8432,13 +8443,16 @@ footer {
       font-family: 'Newsreader',sans-serif;
       padding-bottom: 1em;
       text-align: center;
-      font-size: 5em; }
+      font-size: 5em;
+      padding: 3em 3em 0em 3em;
+      color: black; }
     main .enfoquesection .textoenf1 {
       padding: 1em 1em 0 3em;
       text-align: center; }
     main .enfoquesection .textoenf2 {
-      padding: 1em 1em 3em 3em;
-      text-align: center; }
+      padding: 1em 1em 0em 3em;
+      text-align: center;
+      display: block; }
   main .capacidades {
     margin-bottom: 7em; }
     main .capacidades .titulo-capacidades {
@@ -8448,7 +8462,8 @@ footer {
       padding-bottom: 1.5em;
       padding-top: 1em;
       text-align: center;
-      font-size: 5em; }
+      font-size: 5em;
+      color: black; }
   @keyframes shine {
     from {
       background-position: center 0; }
@@ -8539,7 +8554,58 @@ footer {
       background-color: #f24437; }
     main .capacitaciones-section .myButton:active {
       position: relative;
-      top: 1px; } }
+      top: 1px; }
+  main .queofrecemos {
+    padding: 2em; }
+    main .queofrecemos .tituloqueofrecemos {
+      margin-bottom: 0.7em;
+      text-align: left;
+      color: #3f45eb; }
+    main .queofrecemos .texto1queofrecemos {
+      padding: 1em 1em 1em 0em; }
+    main .queofrecemos .texto2queofrecemos {
+      display: none; }
+    main .queofrecemos .divlista1 {
+      background-color: #0f054d;
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 7px 13px 37px #000;
+      width: 30%; }
+    main .queofrecemos .lilista1 {
+      padding-top: 0.4em;
+      padding-bottom: 0.4em; }
+  main .sencillo {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em; }
+    main .sencillo .titulosencillo {
+      margin-bottom: 0.7em;
+      text-align: left;
+      color: #3f45eb; }
+  main .escuchamos {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em; }
+    main .escuchamos .subtituloescuchamos {
+      margin-bottom: 0.3em;
+      text-align: left;
+      color: #0f054d; }
+    main .escuchamos .tituloescuchamos {
+      margin-bottom: 0.7em;
+      text-align: left;
+      color: #3f45eb; }
+    main .escuchamos .divlista2 {
+      background-color: #0f054d;
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 7px 13px 37px #000;
+      width: 40%;
+      height: 8em; }
+      main .escuchamos .divlista2 .lilista2 {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em; } }
 
 @media screen and (min-width: 760px) and (min-width: 1080px) {
   #boton11 {

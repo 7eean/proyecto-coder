@@ -75,6 +75,7 @@
         .textheader-serv{
             grid-area: p;
             margin-bottom: 400px;
+            padding: 3em;
         }
 
         .headerserv {
@@ -109,17 +110,16 @@
         }
     }
 
-    
-    
         
 
     main{
         .objetivos{
           .titulo-objetivo{
-              padding: 0em 3em 2em 3em;
+              padding: 0em 1em 1em 2em;
               font-size: 3em;
               font-family: 'Prompt', sans-serif;
-              color: #ed779c;
+              color: $colorprimary;
+              text-align: center;
               
             }
 
@@ -131,13 +131,9 @@
 
             .textosobj{
                 padding: 0.3em 3em 0.3em 3em;
-                text-align: center;
-                background-image: linear-gradient(#ced8f5, #ced8f5);
-                background-repeat: no-repeat;
-                background-size: 0% 100%;
-                background-position-x: right;
-                transition: background-size 500ms;
+                text-align: center;   
             }
+
 
         }
 
@@ -147,34 +143,28 @@
             "textosdiv fotosdiv"
             "textosdiv fotosdiv"
             "textosdiv fotosdiv";
-            padding: 3em;
-           
-
+        
             .textosdiv{
                 grid-area: textosdiv;   
             }
 
             
             .titulo-wd{
-                padding: 3em 3em 0em 3em;
+                padding: 1em 1em 0em 1em;
                 font-size: 2em;
             }
 
             .textos-wd{
                 margin: 3em;
-                padding: 3em 3em 3em 3em;
+                padding: 2em 2em 1em 2em;
                 background-color: #ffffff;
                 color: black;  
             }
-
-            .texto-3wd {
-                display: none;
-            }
-            
+ 
             #fotosdiv{
                display: none;
                grid-area: fotosdiv;
-               padding: 3em 3em 3em 3em;
+               padding: 2em 1em 2em 1em;
 
                img{
                    height: 500px;
@@ -224,6 +214,8 @@
             padding-bottom: 1em;
             text-align: center;
             font-size: 5em;
+            padding: 3em 3em 0em 3em;
+            color: black;
             
         }   
 
@@ -233,8 +225,9 @@
         }
 
         .textoenf2{
-            padding: 1em 1em 3em 3em;
+            padding: 1em 1em 0em 3em;
             text-align: center;
+            display: block;
         }
     }
 
@@ -248,6 +241,7 @@
             padding-top: 1em;
             text-align: center;
             font-size: 5em;
+            color: black;
         }
 
         @keyframes shine {
@@ -411,7 +405,84 @@
             position:relative;
             top:1px;
         }
-    }  
+    }
+    
+    .queofrecemos{
+        padding: 2em;
+        
+        .tituloqueofrecemos{
+            margin-bottom: 0.7em;
+            text-align: left;
+            color: $colorprimary;
+        }
+
+        .texto1queofrecemos{
+            padding: 1em 1em 1em 0em;
+        }
+
+        .texto2queofrecemos{
+            display: none;
+        }
+
+        .divlista1{
+            background-color: #0f054d;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 7px 13px 37px #000;
+            width: 30%;
+        }
+
+        .lilista1{
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+        }
+    }
+
+    .sencillo{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+
+        .titulosencillo{
+            margin-bottom: 0.7em;
+            text-align: left;
+            color: $colorprimary;
+        }
+    }
+
+    .escuchamos{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+
+        .subtituloescuchamos {
+            margin-bottom: 0.3em;
+            text-align: left;
+            color: #0f054d;
+        }
+
+        .tituloescuchamos{
+            margin-bottom: 0.7em;
+            text-align: left;
+            color: $colorprimary;
+        }
+
+        .divlista2{
+            background-color: #0f054d;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 7px 13px 37px #000;
+            width: 40%;
+            height: 8em;
+
+            .lilista2{
+                padding-top: 0.4em;
+                padding-bottom: 0.4em;
+            }
+        }
+    }    
 }  
 
 @media screen and (min-width: 1080px) {
