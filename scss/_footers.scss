@@ -2,7 +2,7 @@ footer {
     text-align: center;
     text-decoration: none;
     background-color: #bbc2c9;
-    height: 60vh;
+    height: 80vh;
 
     .emotesfooter {
         color: $colorprimary;
@@ -10,7 +10,7 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
     p {
         padding: 3em;
         font-size: 1.3em;
@@ -59,6 +59,12 @@ footer {
         100% {
             text-shadow: 0 0 5px #000000, 0 0 10px #292929, 0 0 15px #262323;
         }
+    }
+}
+
+@media screen and (min-width: 760px){
+    footer{
+        height: 60vh;
     }
 }
 

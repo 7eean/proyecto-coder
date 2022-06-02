@@ -88,9 +88,9 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  justify-content: space-around;
-  width: 70vh;
-
+ 
+   
+  
   .nav-link {
     padding-right: 0;
     padding-left: 0;
@@ -98,6 +98,13 @@
 
   .dropdown-menu {
     position: static;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .navbar-nav{
+    width: 70vh;
+    justify-content: space-around;
   }
 }
 

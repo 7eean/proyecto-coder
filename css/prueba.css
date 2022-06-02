@@ -2795,14 +2795,17 @@ textarea.form-control-lg {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
-  justify-content: space-around;
-  width: 70vh; }
+  list-style: none; }
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
     position: static; }
+
+@media screen and (min-width: 1000px) {
+  .navbar-nav {
+    width: 70vh;
+    justify-content: space-around; } }
 
 .navbar-text {
   padding-top: 0.5rem;
@@ -7707,9 +7710,9 @@ main {
     display: flex;
     flex-direction: column; }
     main .text-container h2, main .text-container .h2 {
-      padding-left: 4em;
+      padding-left: 1em;
       padding-top: 3em; }
-    main .text-container .botoncontactplanes .myButton {
+    main .text-container .botoncontactplanes .myButton6 {
       box-shadow: 3px 4px 6px 1px #8a2a21;
       background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
       background-color: #c62d1f;
@@ -7717,17 +7720,17 @@ main {
       display: inline-block;
       cursor: pointer;
       color: #ffffff;
-      font-size: 19px;
-      padding: 10px 48px;
+      font-size: 17px;
+      padding: 1em;
       text-decoration: none;
       text-shadow: -1px 1px 36px #700c04;
       font-family: 'Prompt', sans-serif;
-      margin-left: 150px;
-      margin-top: 5em; }
-    main .text-container .botoncontactplanes .myButton:hover {
+      margin-left: 95px;
+      margin-top: 2em; }
+    main .text-container .botoncontactplanes .myButton6:hover {
       background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
       background-color: #f24437; }
-    main .text-container .botoncontactplanes .myButton:active {
+    main .text-container .botoncontactplanes .myButton6:active {
       position: relative;
       top: 1px; }
   main .seo {
@@ -7792,14 +7795,16 @@ main {
   main .enfoquesection .textoenf2 {
     padding: 1em 3em 0em 3em;
     display: none; }
-  main .capacidades .titulo-capacidades {
-    font-family: 'Newsreader', sans-serif;
-    padding: 1.6em 3em 2em 0.4em;
-    text-align: left;
-    font-size: 1.8em;
-    color: #3f45eb; }
-  main .capacidades .card-text3 {
+  main .capacidades {
     display: none; }
+    main .capacidades .titulo-capacidades {
+      font-family: 'Newsreader', sans-serif;
+      padding: 1.6em 3em 2em 0.4em;
+      text-align: left;
+      font-size: 1.8em;
+      color: #3f45eb; }
+    main .capacidades .card-text3 {
+      display: none; }
   main .contactanosmain {
     background-color: #3f45eb;
     padding: 3em;
@@ -7912,7 +7917,8 @@ main {
         padding-top: 0.4em;
         padding-bottom: 0.4em; }
     main .escuchamos .imgab5 {
-      width: 250px; }
+      width: 250px;
+      margin-top: 40px; }
   main .form-register {
     width: 300px;
     background: #24303c;
@@ -8096,7 +8102,7 @@ footer {
   text-align: center;
   text-decoration: none;
   background-color: #bbc2c9;
-  height: 60vh; }
+  height: 80vh; }
   footer .emotesfooter {
     color: #3f45eb;
     display: flex;
@@ -8131,6 +8137,10 @@ footer {
     text-shadow: 0 0 10px #000000, 0 0 20px #292929, 0 0 30px #262323; }
   100% {
     text-shadow: 0 0 5px #000000, 0 0 10px #292929, 0 0 15px #262323; } }
+
+@media screen and (min-width: 760px) {
+  footer {
+    height: 60vh; } }
 
 @media screen and (min-width: 420px) {
   header .headerimg2 {
@@ -8396,7 +8406,8 @@ footer {
       text-align: center;
       display: block; }
   main .capacidades {
-    margin-bottom: 7em; }
+    margin-bottom: 7em;
+    display: block; }
     main .capacidades .titulo-capacidades {
       font-family: 'Newsreader', sans-serif;
       margin-top: 10px;
