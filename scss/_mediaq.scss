@@ -91,6 +91,75 @@
         }  
     }
 
+    .body-contact{
+        background: none;
+    }
+
+    .header-contact{
+        .titulo-main4{
+            display: none;
+        }
+
+        h2{
+            display: none;
+        }
+
+        .img88{
+            display: block;
+            
+            display: block;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        
+    
+        }
+    }
+
+    .header-about {
+        display: grid;
+        grid-template-areas:  
+        "tituloau imgau";
+    
+        h1{
+            display: block;
+            text-align: center;
+            margin-left: 0.4em;
+            grid-area: tituloau;
+            font-size: 2em;
+            margin-top: 2.5em;
+        }
+    
+        h2{
+            text-align: left;
+            padding-top: 5em;
+            grid-area: tituloau;
+            color: $colorprimary;
+            margin-left: 3em;
+        }
+    
+        .titulo-main{
+            margin-top: 2em;
+            text-align: center;
+        }
+    
+        .imgau1 {
+            display: none;
+            grid-area: imgau;
+            padding-left: 7em;
+            height: 550px;
+            width: auto;
+        }
+
+        .textoabout5{
+            grid-area: tituloau;
+            margin-top: 40vh;
+            padding: 3em;
+            font-size: 1.3em;
+            display: block;
+        }
+    }        
+
     .news-container {
 
         .header-empresas {
@@ -110,10 +179,136 @@
         }
     }
 
+
+    .contacto-main{
+        display: grid;
+        grid-template-areas: 
+        "media form form"
+        "media form form";
+
+        .mediacontacto{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5em;
+            grid-area: media;
+            display: grid;
+            grid-template-areas: "cont1"
+            "cont2"
+            "cont3"
+            "cont4";
+            
+            
+            .cont1{
+                padding: 1em;
+                text-align: center;
+                grid-area: cont1;
+                padding-top: 5em;
+    
+                .fa-headset{
+                    font-size: 5em;
+                    padding-bottom: 10px;
+                }
+                
+            }
+    
+            .cont2{
+                padding: 1em;
+                text-align:center;
+                grid-area: cont2;
+                padding-top: 5em;
+
+                .fa-envelope-open-text{
+                    font-size: 5em;
+                    padding-bottom: 10px;
+                }
+            }
+    
+            .cont3{
+                padding: 1em;
+                text-align: center;
+                grid-area: cont3;
+    
+                .fa-map-location-dot{
+                    font-size: 5em;
+                    padding-bottom: 10px;
+                }
+            }
+    
+            .cont4{
+                padding: 1em;
+                text-align: center;
+                grid-area: cont4;
+    
+                .fa-instagram{
+                    font-size: 5em;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    
+        .form-register{
+            width: 700px;
+            background: #24303c;
+            padding: 60px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            border-radius: 4px;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+            grid-area: form;
+    
+            h2{
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+    
+            a{
+                color: white;
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+    
+            .botons{
+                width: 100%;
+                background: #1f53c5;
+                border: none;
+                padding: 12px;
+                color: white;
+                margin: 16px 0;
+                font-size: 16px;
+                box-shadow: 7px 13px 37px #000;
+            }
+    
+            p{
+                height: 40px;
+                text-align: center;
+                font-size: 18px;
+                line-height: 40px;
+            }
+        }
+    
+        .controls{
+            width: 100%;
+            background: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-size: 18px;
+            color: white;
+        }    
+    }    
+
         
 
     main{
-        .objetivos{
+        .objetivos{ 
           .titulo-objetivo{
               padding: 0em 1em 1em 2em;
               font-size: 3em;
@@ -134,20 +329,14 @@
                 text-align: center;   
             }
 
+            .divimgobj{
+                display: none;
+            }
+
 
         }
 
        .descripcionwd{
-            display: grid;
-            grid-template-areas:
-            "textosdiv fotosdiv"
-            "textosdiv fotosdiv"
-            "textosdiv fotosdiv";
-        
-            .textosdiv{
-                grid-area: textosdiv;   
-            }
-
             
             .titulo-wd{
                 padding: 1em 1em 0em 1em;
@@ -163,7 +352,6 @@
  
             #fotosdiv{
                display: none;
-               grid-area: fotosdiv;
                padding: 2em 1em 2em 1em;
 
                img{
@@ -300,15 +488,8 @@
         height: 180px;
         background-color: #ffffff;
         border: 5px solid;
-        border-image: linear-gradient( #0f054d, #7054ed, #1c64ff) 1; 
-        animation: rotate 3s ease-in infinite;
         border-radius: 20px;
         
-        @keyframes rotate {
-            50%{
-                border-image: linear-gradient( 360deg, #ff3ba3, #dd2476, #1c64ff) 1;
-            }
-        }
     }
 
     .carda:hover{
@@ -409,19 +590,28 @@
     
     .queofrecemos{
         padding: 2em;
+        display: grid;
+        grid-template-areas: 
+        "titulo4 titulo4 titulo4"
+        "textos textos textos"
+        "lista3 lista3 img3";
+
         
         .tituloqueofrecemos{
             margin-bottom: 0.7em;
             text-align: left;
             color: $colorprimary;
+            grid-area: titulo4;
         }
 
         .texto1queofrecemos{
             padding: 1em 1em 1em 0em;
+            grid-area: textos;
         }
 
         .texto2queofrecemos{
             display: none;
+            grid-area: textos;
         }
 
         .divlista1{
@@ -430,12 +620,17 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 7px 13px 37px #000;
-            width: 30%;
+            grid-area: lista3;
         }
 
         .lilista1{
             padding-top: 0.4em;
             padding-bottom: 0.4em;
+        }
+        
+        .divimgabout3{
+            grid-area: img3;
+            padding-left: 10em;
         }
     }
 
@@ -455,17 +650,29 @@
         padding-left: 2em;
         padding-right: 2em;
         padding-bottom: 2em;
+        display: grid;
+        grid-template-areas:
+        "subtitulo5 subtitulo5 subtitulo5" 
+        "titulo5 titulo5 titulo5"
+        "textos2 textos2 textos2"
+        "lista5 lista5 img5";
 
         .subtituloescuchamos {
             margin-bottom: 0.3em;
             text-align: left;
             color: #0f054d;
+            grid-area: subtitulo5;
         }
 
         .tituloescuchamos{
             margin-bottom: 0.7em;
             text-align: left;
             color: $colorprimary;
+            grid-area: titulo5;
+        }
+        
+        .textoescuchamos{
+            grid-area: textos2;
         }
 
         .divlista2{
@@ -474,15 +681,22 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 7px 13px 37px #000;
-            width: 40%;
             height: 8em;
+            grid-area: lista5;
 
             .lilista2{
                 padding-top: 0.4em;
                 padding-bottom: 0.4em;
             }
         }
-    }    
+
+        .divimab5{
+            grid-area: img5;
+            padding-left: 10em;
+        }
+    }
+    
+    
 }  
 
 @media screen and (min-width: 1080px) {
@@ -495,11 +709,19 @@
             margin-top: 1px;
         }
 
+        .header-about{
+            .imgau1{
+                display: block;
+            }
+        }
+
         main{
 
             .descripcionwd{
+                
                 .textos-wd{
                     display: block;
+                    grid-area: textosdiv;
                 }
 
                 #fotosdiv{
@@ -514,16 +736,61 @@
                 }
             }
 
+            .objetivos{
+
+                display: grid;
+                grid-template-areas: 
+                "titulo-obj titulo-obj titulo-obj"
+                "img-obj2 img-obj2 texto-obj"
+                "img-obj2 img-obj2 texto-obj";
+
+                .titulo-objetivo{
+                    padding: 0em 1em 1em 2em;
+                    font-size: 3em;
+                    font-family: 'Prompt', sans-serif;
+                    color: $colorprimary;
+                    text-align: center;
+                    grid-area: titulo-obj;
+                }
+      
+                .textosobj:hover {
+                    background-size: 100% 100%;
+                    background-position-x: left;
+                    color: brown;
+                }
+      
+                .textosobj{
+                    padding: 2em;
+                    text-align: center;
+                    grid-area: texto-obj;   
+                }
+      
+                .divimgobj{
+                    display: block;
+                    grid-area: img-obj2;
+                }
+      
+      
+            }    
+
         }    
     }
-}
+
 
 @media screen and (min-width: 1380px) {
     main{
 
         .descripcionwd{
+            display: grid;
+                
+            grid-template-areas:
+            "textosdiv fotosdiv"
+            "textosdiv fotosdiv"
+            "textosdiv fotosdiv";
+                
             .textos-wd{
                 display: block;
+                padding: 2em;
             }
 
             #fotosdiv{
@@ -542,3 +809,4 @@
 }
 
 
+}

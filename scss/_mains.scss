@@ -11,7 +11,7 @@ main {
             font-size: 1.9em;
         }
 
-        .texto-3, .imgobjetivos {
+        .texto-3, .divimgobj {
             display: none
         }
     }
@@ -200,9 +200,12 @@ main {
     }
 
     .section-empresas {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-left: 10em;
+        display: grid;
+        grid-template-areas: "carda cardb"
+        "cardc carde"
+        "cardf cardg"
+        "cardh cardi";
+        margin-left: 3em;
         padding-bottom: 5em;
 
 
@@ -217,16 +220,10 @@ main {
         height: 140px;
         background-color: #ffffff;
         border: 5px solid;
-        border-image: linear-gradient( #0f054d, #7054ed, #1c64ff) 1;
-        animation: rotate 3s ease-in infinite;
         margin-top: 1em;
         margin-bottom: 1em;
-
-        @keyframes rotate {
-            50%{
-                border-image: linear-gradient(360deg, #ff3ba3, #dd2476, #1c64ff) 1;
-            }
-        }
+        box-shadow: 7px 13px 37px $colorprimary;
+        border-radius: 20px;
     }
 
     .carda {
@@ -318,6 +315,10 @@ main {
             padding-top: 0.4em;
             padding-bottom: 0.4em;
         }
+
+        .imgab3{
+            width: 250px;
+        }
     }
 
     .sencillo{
@@ -361,11 +362,15 @@ main {
                 padding-bottom: 0.4em;
             }
         }
+
+        .imgab5{
+            width: 250px;
+        }
     }
 
     // Contact 
     .form-register{
-        width: 400px;
+        width: 300px;
         background: #24303c;
         padding: 30px;
         margin: auto;
@@ -419,6 +424,76 @@ main {
         font-size: 18px;
         color: white;
     }
-    
 
+    .mediacontacto{
+        display: flex;
+        flex-direction: column;
+        border-radius: none;
+        box-shadow: none;
+        margin-bottom: 5em;
+        
+        
+        .cont1{
+           text-align: center;
+           margin-top: 30px;
+
+            .fa-headset{
+                font-size: 5em;
+                padding-bottom: 10px;
+            }
+            
+        }
+
+        .cont2{
+            text-align: center;
+            margin-top: 30px;
+            
+
+            .fa-envelope-open-text{
+                font-size: 5em;
+                padding-bottom: 10px;  
+            }
+        }
+
+        .cont3{
+            text-align: center;
+            margin-top: 30px;
+
+            .fa-map-location-dot{
+                font-size: 5em;
+                padding-bottom: 10px;
+            }
+        }
+
+        .cont4{
+            text-align: center;
+            margin-top: 30px;
+
+            .fa-instagram{
+                font-size: 5em;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+.body-contact{
+    background: linear-gradient(
+        to right, #833ab4, #37ece3, #11015a
+    );
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+
+
+    @keyframes animate-background {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+    }
 }

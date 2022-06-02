@@ -116,21 +116,36 @@ header {
         margin-top: 2em;
         text-align: center;
     }
+
+    .imgau1 {
+        display: block;
+        height: 300px;
+        width: auto;
+    }
+
+    .textoabout5 {
+        display: none;
+    }
 }
 
 
 // Contact
-.contact-container {
-    .header-contact{
-        display: block;
-    }
 
-    h1{
+.header-contact{
+    display: block;
+    
+
+    .titulo-main4{
         display: block;
     }
 
     h2{
         text-align: center;
+        display: block;
     }
-}
 
+    .img88{
+        display: none;
+    }
+
+}
