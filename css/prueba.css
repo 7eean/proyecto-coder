@@ -2795,7 +2795,9 @@ textarea.form-control-lg {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  justify-content: space-around;
+  width: 70vh; }
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -7796,6 +7798,8 @@ main {
     text-align: left;
     font-size: 1.8em;
     color: #3f45eb; }
+  main .capacidades .card-text3 {
+    display: none; }
   main .contactanosmain {
     background-color: #3f45eb;
     padding: 3em;
@@ -8091,7 +8095,8 @@ header .textheader-serv {
 footer {
   text-align: center;
   text-decoration: none;
-  background-color: #bbc2c9; }
+  background-color: #bbc2c9;
+  height: 60vh; }
   footer .emotesfooter {
     color: #3f45eb;
     display: flex;
@@ -8344,7 +8349,7 @@ footer {
     font-size: 2em; }
   main .descripcionwd .textos-wd {
     margin: 3em;
-    padding: 2em 2em 1em 2em;
+    padding: 2em 2em 0em 2em;
     background-color: #ffffff;
     color: black; }
   main .descripcionwd #fotosdiv {
@@ -8406,6 +8411,8 @@ footer {
       background-position: center 0; }
     to {
       background-position: center 200%; } }
+    main .capacidades .card-text3 {
+      display: block; }
   main .text-container {
     background-color: #13132b;
     color: white;

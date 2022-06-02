@@ -345,7 +345,7 @@
 
             .textos-wd{
                 margin: 3em;
-                padding: 2em 2em 1em 2em;
+                padding: 2em 2em 0em 2em;
                 background-color: #ffffff;
                 color: black;  
             }
@@ -439,7 +439,11 @@
             to {
                 background-position: center 200%;
             }
-        }   
+        }  
+        
+        .card-text3{
+            display: block;
+        }
     }
 
     .text-container{
